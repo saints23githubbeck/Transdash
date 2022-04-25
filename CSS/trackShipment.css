@@ -1,0 +1,143 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --lightPink: #E72ED0;
+    --lightPurple: #721BBE;
+    --darkPurple: #1C0132;
+    --white: #ffffff;
+    --black: #0000000;
+}
+
+
+.navContent {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1rem 3rem 1rem;
+    position: fixed;
+    width: 100%;
+}
+
+.navList {
+    list-style-type: none;
+}
+
+.nav-list-item {
+    float: left;
+    padding-right: 2rem;
+}
+
+.nav-list-item:nth-child(1) {
+    color: var(--black);
+}
+
+.nav-list-item:nth-child(2) {
+    color: var(--lightPink);
+}
+
+.navLink {
+    color: var(--lightPink);
+    text-decoration: none;
+}
+
+.navLink:hover {
+    color: var(--black);
+}
+
+.status {
+    background: var(--lightPink);
+    width: 9rem;
+    padding: 8px;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.trackId {
+    margin-top: 5rem;
+}
+
+
+.headerPackages,
+.senderHeader,
+.recipentHeader {
+    background: var(--darkPurple);
+    color: var(--white);
+}
+
+.packageContainer {
+    display: flex;
+    overflow-x: auto;
+}
+
+.packageContainer::-webkit-scrollbar {
+    width: 0;
+}
+
+.packageImg {
+    margin-right: 8px;
+    min-width: 8rem;
+    height: 8rem;
+    object-fit: contain;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.packageImg>img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.sender-info-container1,
+.recipent-info-container1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sender-info-container2,
+.recipent-info-container2 {
+    display: flex;
+    column-gap: 5%;
+}
+
+.icon {
+    color: var(--lightPink);
+}
+
+.title {
+    font-weight: 600;
+}
+.printButton{
+    display: flex;
+    justify-content: flex-end;
+}
+.printBtn{
+    border: none;
+    outline: none;
+    padding: 8px;
+    width: 9rem;
+    background: var(--lightPurple);
+    color: var(--white);
+    border-radius: 5px;
+}
+
+.sideNav{
+    background: var(--darkPurple);
+    color: #ffffff;
+}
+
+.createNewCustomer{
+    border: none;
+    outline: none;
+    padding: 8px;
+    background: var(--lightPurple);
+    color: var(--white);
+    border-radius: 5px;
+}
+
+.createWrapper{
+    margin: 3rem 0 5rem 0;
+}

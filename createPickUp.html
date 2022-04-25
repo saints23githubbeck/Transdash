@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRANSDASH | Create Pickups</title>
+    <link rel="stylesheet" href="./CSS/createPickUp.css">
+    <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/ca2912634d.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="body">
+
+
+    <nav class="navContainer p-3 fw-bold">
+        <div class="left-top-nav">
+            <div class="logoName">Transdash</div>
+        </div>
+        <div class="right-top-nav">
+            <div class="me-5">
+                <button class="create-shipment-btn">Create Shipment</button>
+            </div>
+
+            <div class="me-3">
+                <select name="" id="">
+                    <option value="">EN</option>
+                    <option value="">Fer</option>
+                    <option value="">Spn</option>
+                </select>
+            </div>
+
+            <div class="notification me-3">
+                <span><i class="fa-solid fa-bell"></i></span>
+                <span class="notification-dot"></span>
+            </div>
+
+            <div class="profileImg me-3">
+                <img src="./assets/placeholder.png" alt="">
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <div class="sideBar">
+            <div class="sideBarContent">
+
+                <section class="mb-5">
+                    <a href="./dashboard.html">
+                        <div class="side-bar-item mb-2">
+                            <span class="me-2"><i class="fa-solid fa-border-all"></i></span>
+                            <span>Dashboard</span>
+                        </div>
+                    </a>
+
+                    <div class="drop-container mb-2">
+                        <div class="side-bar-item">
+                            <span class="me-2"><i class="fa-solid fa-box-open"></i></i></span>
+                            <span>Shipment</span>
+                            <span class="right-icon"><i class="fa-solid fa-angle-right"></i></span>
+                            <span class="down-icon"><i class="fa-solid fa-angle-down"></i></span>
+                        </div>
+
+                        <div class="drop-item">
+                            <ul class="drop-item-list">
+                                <a href="./dashboardShipments.html">
+                                    <li class="drop-link">Dashboard Shipments</li>
+                                </a>
+                                <a href="./createMultipleShipments.html">
+                                    <li class="drop-link">Create Mulitple Shipments</li>
+                                </a>
+
+                                <a href="./createShipments.html">
+                                    <li class="drop-link">Create Shipments</li>
+                                </a>
+
+                                <a href="./shipmentLists.html">
+                                    <li class="drop-link">Shipments Lists</li>
+                                </a>
+
+                                <a href="./paymentLists.html">
+                                    <li class="drop-link">Payment Lists</li>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="drop-container mb-2">
+                        <div class="side-bar-item">
+                            <span class="me-2"><i class="fa-solid fa-id-card-clip"></i></span>
+                            <span>Pickup</span>
+                            <span class="right-icon"><i class="fa-solid fa-angle-right"></i></span>
+                            <span class="down-icon"><i class="fa-solid fa-angle-down"></i></span>
+                        </div>
+
+                        <div class="drop-item">
+                            <ul class="drop-item-list">
+                                <a href="./dashboardPickups.html">
+                                    <li class="drop-link">Dashboard Pickups</li>
+                                </a>
+
+                                <a href="./pickUpLists.html">
+                                    <li class="drop-link">Pick Up List</li>
+                                </a>
+
+                                <a href="./createPickUp.html">
+                                    <li class="drop-link">Create Pick Up</li>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="drop-container mb-2">
+                        <div class="side-bar-item">
+                            <span class="me-2"><i class="fa-solid fa-credit-card"></i></span>
+                            <span>Transaction</span>
+                            <span class="right-icon"><i class="fa-solid fa-angle-right"></i></span>
+                            <span class="down-icon"><i class="fa-solid fa-angle-down"></i></span>
+                        </div>
+
+                        <div class="drop-item">
+                            <ul class="drop-item-list">
+                                <a href="./dashboardAccountReceiveable.html">
+                                    <li class="drop-link">Dashboard Accounts Receiveable</li>
+                                </a>
+
+                                <a href="./accountReceiveable.html">
+                                    <li class="drop-link">Account Receiveable</li>
+                                </a>
+
+                                <a href="./transactionPaymentList.html">
+                                    <li class="drop-link">Payment List</li>
+                                </a>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="drop-container mb-2">
+                        <div class="side-bar-item">
+                            <span class="me-2"><i class="fa-solid fa-gift"></i></span>
+                            <span>Consolidate</span>
+                            <span class="right-icon"><i class="fa-solid fa-angle-right"></i></span>
+                            <span class="down-icon"><i class="fa-solid fa-angle-down"></i></span>
+                        </div>
+
+                        <div class="drop-item">
+                            <ul class="drop-item-list">
+                                <li>drop-item</li>
+                                <li>drop-item</li>
+                                <li>drop-item</li>
+                                <li>drop-item</li>
+                                <li>drop-item</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </section>
+
+                <section class="mb-5">
+
+                    <div class="drop-container mb-2">
+                        <div class="side-bar-item">
+                            <span class="me-2"><i class="fa-solid fa-cart-shopping"></i></span>
+                            <span>Online Shopping</span>
+                            <span class="right-icon"><i class="fa-solid fa-angle-right"></i></span>
+                            <span class="down-icon"><i class="fa-solid fa-angle-down"></i></span>
+                        </div>
+
+                        <div class="drop-item">
+                            <ul class="drop-item-list">
+                                <li>drop-item</li>
+                                <li>drop-item</li>
+                                <li>drop-item</li>
+                                <li>drop-item</li>
+                                <li>drop-item</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="drop-container mb-2">
+                        <div class="side-bar-item">
+                            <span class="me-2"><i class="fa-solid fa-sliders"></i></span>
+                            <span>Shipping Settings</span>
+                            <span class="right-icon"><i class="fa-solid fa-angle-right"></i></span>
+                            <span class="down-icon"><i class="fa-solid fa-angle-down"></i></span>
+                        </div>
+
+                        <div class="drop-item">
+                            <ul class="drop-item-list">
+                                <li>drop-item</li>
+                                <li>drop-item</li>
+                                <li>drop-item</li>
+                                <li>drop-item</li>
+                                <li>drop-item</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="side-bar-item mb-2">
+                        <span class="me-2"><i class="fa-solid fa-gear"></i></span>
+                        <span>General Settings</span>
+                    </div>
+
+                    <div class="side-bar-item mb-2">
+                        <span class="me-2"><i class="fa-solid fa-chart-column"></i></span>
+                        <span>General Report</span>
+                    </div>
+
+                </section>
+
+                <section class="mb-5">
+                    <div class="drop-container mb-2">
+                        <div class="side-bar-item">
+                            <span class="me-2"><i class="fa-solid fa-users-rectangle"></i></span>
+                            <span>User List</span>
+                            <span class="right-icon"><i class="fa-solid fa-angle-right"></i></span>
+                            <span class="down-icon"><i class="fa-solid fa-angle-down"></i></span>
+                        </div>
+
+                        <div class="drop-item">
+                            <ul class="drop-item-list">
+                                <li>drop-item</li>
+                                <li>drop-item</li>
+                                <li>drop-item</li>
+                                <li>drop-item</li>
+                                <li>drop-item</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="drop-container mb-2">
+                        <div class="side-bar-item">
+                            <span class="me-2"><i class="fa-solid fa-user-group"></i></span>
+                            <span>Staff</span>
+                            <span class="right-icon"><i class="fa-solid fa-angle-right"></i></span>
+                            <span class="down-icon"><i class="fa-solid fa-angle-down"></i></span>
+                        </div>
+
+                        <div class="drop-item">
+                            <ul class="drop-item-list">
+                                <li>drop-item</li>
+                                <li>drop-item</li>
+                                <li>drop-item</li>
+                                <li>drop-item</li>
+                                <li>drop-item</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </section>
+
+                <section>
+                    <div class="logOut px-3 py-5 fw-bold">
+                        <div class="profileImg me-3">
+                            <img src="./assets/placeholder.png" alt="">
+                        </div>
+
+                        <div>
+                            <span class="ms-3"><i class="fa-solid fa-arrow-right-from-bracket"></i></span>
+                            <span>Log Out</span>
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+        </div>
+
+
+        <main class="main mb-4">
+            
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-5">
+                        <div class="create-pickup p-3">
+                            <div>
+                                <h1>Add New Collection</h1>
+                            </div>
+    
+                            <div>
+                                <div>
+                                    <h6>Shipment Prefix</h6>
+                                    <select class="form-select mb-3">
+                                        <option selected>Country Prefix</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                      </select>
+                                </div>
+
+                                <div>
+                                    <h6>Order Number (Tracking)</h6>
+
+                                    <div class="mb-3">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                
+                                <div>
+                                    <h6>Agency List</h6>
+
+                                    <div class="mb-3">
+                                        <input type="text" class="form-control">
+                                      </div>
+                                </div>
+
+                                <div>
+                                    <h6>Origin Office</h6>
+
+                                    <div class="mb-3">
+                                        <input type="text" class="form-control">
+                                      </div>
+                                </div>
+
+                                <div class="pickup-senderInfo mt-5">
+                                    <div class="pickup-senderInfoHeader">
+                                        <span class="pickup-senderInfoIcon me-3"><i class="fa-solid fa-circle-info"></i></span>
+                                        <span class="fw-bold">Sender Information</span>
+                                    </div>
+
+                                    <div>
+                                        <div class="fw-bold mt-3">Sender/Customer</div>
+                                            <div class="input-group mb-5">
+                                                <input type="text" class="form-control">
+                                                <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-user"></i></span>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="fw-bold mt-3">Sender/Customer Address</div>
+                                            <div class="input-group mb-5">
+                                                <input type="text" class="form-control">
+                                                <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-user"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="pickup-recipentInfo mt-4">
+                                    <div class="pickup-recipentInfoHeader">
+                                        <span class="pickup-recipentInfoIcon me-3"><i class="fa-solid fa-circle-info"></i></span>
+                                        <span class="fw-bold">Recipent Information</span>
+                                    </div>
+
+                                    <div>
+                                        <div class="fw-bold mt-3">Recipent/Customer</div>
+                                            <div class="input-group mb-5">
+                                                <input type="text" class="form-control">
+                                                <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-user"></i></span>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="fw-bold mt-3">Recipent/Customer Address</div>
+                                            <div class="input-group mb-5">
+                                                <input type="text" class="form-control">
+                                                <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-user"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-7">
+                        <div class="create-pickup-package-info p-3">
+                            <div class="pickup-packageInfoHeader">
+                                <span class="pickup-packageInfoIcon me-3"><i class="fa-solid fa-circle-info"></i></span>
+                                <span class="fw-bold">Packages Info: </span>
+                            </div>
+
+                            <form class="row g-3">
+
+                            
+                                <div class="col-md-6">
+                                  <label  class="form-label">Description</label>
+                                  <input type="text" class="form-control">
+                                </div>
+
+                                <div class="col-md-3">
+                                    <label for="inputZip" class="form-label">Declared Value</label>
+                                    <input type="text" class="form-control" id="inputZip">
+                                </div>
+
+                                <div class="col-md-3">
+                                    <label for="inputZip" class="form-label">Quantity</label>
+                                    <input type="text" class="form-control" id="inputZip">
+                                </div>
+
+                                <div class="col-md-3">
+                                    <label  class="form-label">Weight(lb)</label>
+                                    <input type="text" class="form-control">
+                                  </div>
+  
+                                  <div class="col-md-3">
+                                      <label for="inputZip" class="form-label">Length(cm)</label>
+                                      <input type="text" class="form-control" id="inputZip">
+                                  </div>
+  
+                                  <div class="col-md-3">
+                                      <label for="inputZip" class="form-label">Height(cm)</label>
+                                      <input type="text" class="form-control" id="inputZip">
+                                  </div>
+
+                                  <div class="buttonContainer d-flex justify-content-between">
+                                        <button class="addPackages p-2 fw-bold">
+                                            <span><i class="fa-solid fa-plus"></i></span>
+                                            <span> Add Boxes or Packages</span>
+                                        </button>
+
+                                        <button class="pickup-create-invoice p-2 fw-bold">
+                                            <span><i class="fa-solid fa-file-invoice"></i></span>
+                                            <span>Create Invoice</span>
+                                        </button>
+                                  </div>
+                            </form>
+
+                            <div class="pickup-total mt-3 mb-2">
+                                <div class="pickup-totalHeader fw-bold mb-3">Total</div>
+
+                                <div class="pickup-totalContainer mb-2">
+                                    <div class="poundTotal">
+                                        <div>Total Pounds Weight</div>
+                                        <div>75.00</div>
+                                    </div>
+                                    <div class="volumetricTotal">
+                                        <div>Total Volumetric Weight</div>
+                                        <div>80</div>
+                                    </div>
+                                    <div class="totalWeight">
+                                        <div>Total Weight Calculation</div>
+                                        <div>89</div>
+                                    </div>
+                                    <div class="totalDeclaredValue">
+                                        <div>Total Declared Value</div>
+                                        <div>100</div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="pickup-subTotal mt-3">
+                                <div class="pickup-subTotalHeader fw-bold mb-3">Sub-Total</div>
+
+                                <form class="row g-3">
+
+                                    
+                                    <div class="col-md-4">
+                                        <label  class="form-label">Discount %</label>
+                                        <input type="text" class="form-control">
+                                      </div>
+      
+                                      <div class="col-md-4">
+                                          <label for="inputZip" class="form-label">Insured Value</label>
+                                          <input type="text" class="form-control" id="inputZip">
+                                      </div>
+      
+                                      <div class="col-md-4">
+                                         <div class="">
+                                             <span class="fw-bold" ></span>
+                                             <span class="fw-bold"></span>
+                                         </div>
+                                      </div>
+
+                                    
+                                    <div class="col-md-4">
+                                        <label  class="form-label">Shipping Insurance %</label>
+                                        <input type="text" class="form-control">
+                                      </div>
+      
+                                      <div class="col-md-4">
+                                          <label for="inputZip" class="form-label">Custom Tariffs %</label>
+                                          <input type="text" class="form-control" id="inputZip">
+                                      </div>
+      
+                                      <div class="col-md-4">
+                                         <div class="">
+                                             <span class="fw-bold" ></span>
+                                             <span class="fw-bold"></span>
+                                         </div>
+                                      </div>
+
+                        
+                                    <div class="col-md-4">
+                                      <label  class="form-label">Tax %</label>
+                                      <input type="text" class="form-control">
+                                    </div>
+    
+                                    <div class="col-md-4">
+                                        <label for="inputZip" class="form-label">Declared Tax %</label>
+                                        <input type="text" class="form-control" id="inputZip">
+                                    </div>
+    
+                                    <div class="col-md-4">
+                                       <div class="">
+                                           <span class="fw-bold" ></span>
+                                           <span class="fw-bold"></span>
+                                       </div>
+                                    </div>
+    
+                                    <div class="col-md-4">
+                                        <label  class="form-label">Fixed Exchange</label>
+                                        <input type="text" class="form-control">
+                                      </div>
+      
+                                      <div class="col-md-4">
+                                          <label for="inputZip" class="form-label">Re Expedition</label>
+                                          <input type="text" class="form-control" id="inputZip">
+                                      </div>
+    
+                                      <div class="col-md-4">
+                                        <span class="fw-bold" ></span>
+                                        <span class="fw-bold"></span>
+                                      </div>
+                                </form>
+
+                                <div class="pickup-courierFee p-3 mt-4 fw-bold">
+                                    <div>
+                                        <span class="me-3">COURIER FEE</span>
+                                        <span>USD</span>
+                                    </div>
+                                    <div>
+                                        <span>350</span>
+                                    </div>
+                                </div>
+
+                                <div class="mt-3 d-flex justify-content-end">
+                                    <button class="create-invoice p-1">
+                                        <span><i class="fa-solid fa-file-invoice"></i></span>
+                                        <span>Create Invoice</span>
+                                    </button>
+                                </div>
+                            </div>        
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </section>
+
+    <section class="pickup-create-shipment-main-2 p-3">
+        <div class="container">
+            <div class="row">
+                <div class="pickup-shipmentHeader">
+                    <span class="pickup-shipmentIcon"><i class="fa-solid fa-circle-info"></i></span>
+                    <span class="fw-bold">Shipment Info :</span>
+                </div>
+
+
+                <form class="row g-3 mb-5">
+                            
+                    <div class="col-md-3">
+                      <label  class="form-label">Servicing Shipping</label>
+                      <input type="text" class="form-control">
+                    </div>
+
+                    <div class="col-md-3">
+                        <label for="inputZip" class="form-label">Payment Method</label>
+                        <input type="text" class="form-control" id="inputZip">
+                    </div>
+
+                    <div class="col-md-3">
+                        <label  class="form-label">Courier Company</label>
+                        <input type="text" class="form-control" >
+                    </div>
+
+                    <div class="col-md-3">
+                        <label  class="form-label">Delivery Status</label>
+                        <input type="text" class="form-control">
+                      </div>
+  
+                      <div class="col-md-3">
+                          <label  class="form-label">Packaging Type</label>
+                          <input type="text" class="form-control" id="inputZip">
+                      </div>
+  
+                      <div class="col-md-3">
+                          <label for="inputZip" class="form-label">Payment Methods</label>
+                          <input type="text" class="form-control" >
+                      </div>
+  
+                      <div class="col-md-3">
+                        <label  class="form-label">Shipping Mode</label>
+                        <input type="text" class="form-control">
+                      </div>
+
+                      <div class="col-md-3">
+                          <label  class="form-label">Delivery Time</label>
+                          <input type="text" class="form-control">
+                        </div>
+
+                        <div class="buttonContainer">
+                            <button class="dragBtn p-2">Drag or Browse</button>
+                            <button class="uploadBtn p-2">
+                                <span><i class="fa-solid fa-upload"></i></span>
+                                <span>Upload</span>
+                            </button>
+
+                        </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

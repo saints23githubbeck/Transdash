@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRANSDASH | Dashboard Pickups</title>
+    <link rel="stylesheet" href="./CSS/dashboardPickups.css">
+    <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/ca2912634d.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="body">
+
+
+    <nav class="navContainer p-3 fw-bold">
+        <div class="left-top-nav">
+            <div class="logoName">Transdash</div>
+        </div>
+        <div class="right-top-nav">
+            <div class="me-5">
+                <button class="create-shipment-btn">Create Shipment</button>
+            </div>
+
+            <div class="me-3">
+                <select name="" id="">
+                    <option value="">EN</option>
+                    <option value="">Fer</option>
+                    <option value="">Spn</option>
+                </select>
+            </div>
+
+            <div class="notification me-3">
+                <span><i class="fa-solid fa-bell"></i></span>
+                <span class="notification-dot"></span>
+            </div>
+
+            <div class="profileImg me-3">
+                <img src="./assets/placeholder.png" alt="">
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <div class="sideBar">
+            <div class="sideBarContent">
+
+                <section class="mb-5">
+                    <a href="./dashboard.html">
+                        <div class="side-bar-item mb-2">
+                            <span class="me-2"><i class="fa-solid fa-border-all"></i></span>
+                            <span>Dashboard</span>
+                        </div>
+                    </a>
+
+                    <div class="drop-container mb-2">
+                        <div class="side-bar-item">
+                            <span class="me-2"><i class="fa-solid fa-box-open"></i></i></span>
+                            <span>Shipment</span>
+                            <span class="right-icon"><i class="fa-solid fa-angle-right"></i></span>
+                            <span class="down-icon"><i class="fa-solid fa-angle-down"></i></span>
+                        </div>
+
+                        <div class="drop-item">
+                            <ul class="drop-item-list">
+                                <a href="./dashboardShipments.html">
+                                    <li class="drop-link">Dashboard Shipments</li>
+                                </a>
+                                <a href="./createMultipleShipments.html">
+                                    <li class="drop-link">Create Mulitple Shipments</li>
+                                </a>
+
+                                <a href="./createShipments.html">
+                                    <li class="drop-link">Create Shipments</li>
+                                </a>
+
+                                <a href="./shipmentLists.html">
+                                    <li class="drop-link">Shipments Lists</li>
+                                </a>
+
+                                <a href="./paymentLists.html">
+                                    <li class="drop-link">Payment Lists</li>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="drop-container mb-2">
+                        <div class="side-bar-item">
+                            <span class="me-2"><i class="fa-solid fa-id-card-clip"></i></span>
+                            <span>Pickup</span>
+                            <span class="right-icon"><i class="fa-solid fa-angle-right"></i></span>
+                            <span class="down-icon"><i class="fa-solid fa-angle-down"></i></span>
+                        </div>
+
+                        <div class="drop-item">
+                            <ul class="drop-item-list">
+                                <a href="./dashboardPickups.html">
+                                    <li class="drop-link">Dashboard Pickups</li>
+                                </a>
+
+                                <a href="./pickUpLists.html">
+                                    <li class="drop-link">Pick Up List</li>
+                                </a>
+
+                                <a href="./createPickUp.html">
+                                    <li class="drop-link">Create Pick Up</li>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="drop-container mb-2">
+                        <div class="side-bar-item">
+                            <span class="me-2"><i class="fa-solid fa-credit-card"></i></span>
+                            <span>Transaction</span>
+                            <span class="right-icon"><i class="fa-solid fa-angle-right"></i></span>
+                            <span class="down-icon"><i class="fa-solid fa-angle-down"></i></span>
+                        </div>
+
+                        <div class="drop-item">
+                            <ul class="drop-item-list">
+                                <a href="./dashboardAccountReceiveable.html">
+                                    <li class="drop-link">Dashboard Accounts Receiveable</li>
+                                </a>
+
+                                <a href="./accountReceiveable.html">
+                                    <li class="drop-link">Account Receiveable</li>
+                                </a>
+
+                                <a href="./transactionPaymentList.html">
+                                    <li class="drop-link">Payment List</li>
+                                </a>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="drop-container mb-2">
+                        <div class="side-bar-item">
+                            <span class="me-2"><i class="fa-solid fa-gift"></i></span>
+                            <span>Consolidate</span>
+                            <span class="right-icon"><i class="fa-solid fa-angle-right"></i></span>
+                            <span class="down-icon"><i class="fa-solid fa-angle-down"></i></span>
+                        </div>
+
+                        <div class="drop-item">
+                            <ul class="drop-item-list">
+                                <li>drop-item</li>
+                                <li>drop-item</li>
+                                <li>drop-item</li>
+                                <li>drop-item</li>
+                                <li>drop-item</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </section>
+
+                <section class="mb-5">
+
+                    <div class="drop-container mb-2">
+                        <div class="side-bar-item">
+                            <span class="me-2"><i class="fa-solid fa-cart-shopping"></i></span>
+                            <span>Online Shopping</span>
+                            <span class="right-icon"><i class="fa-solid fa-angle-right"></i></span>
+                            <span class="down-icon"><i class="fa-solid fa-angle-down"></i></span>
+                        </div>
+
+                        <div class="drop-item">
+                            <ul class="drop-item-list">
+                                <li>drop-item</li>
+                                <li>drop-item</li>
+                                <li>drop-item</li>
+                                <li>drop-item</li>
+                                <li>drop-item</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="drop-container mb-2">
+                        <div class="side-bar-item">
+                            <span class="me-2"><i class="fa-solid fa-sliders"></i></span>
+                            <span>Shipping Settings</span>
+                            <span class="right-icon"><i class="fa-solid fa-angle-right"></i></span>
+                            <span class="down-icon"><i class="fa-solid fa-angle-down"></i></span>
+                        </div>
+
+                        <div class="drop-item">
+                            <ul class="drop-item-list">
+                                <li>drop-item</li>
+                                <li>drop-item</li>
+                                <li>drop-item</li>
+                                <li>drop-item</li>
+                                <li>drop-item</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="side-bar-item mb-2">
+                        <span class="me-2"><i class="fa-solid fa-gear"></i></span>
+                        <span>General Settings</span>
+                    </div>
+
+                    <div class="side-bar-item mb-2">
+                        <span class="me-2"><i class="fa-solid fa-chart-column"></i></span>
+                        <span>General Report</span>
+                    </div>
+
+                </section>
+
+                <section class="mb-5">
+                    <div class="drop-container mb-2">
+                        <div class="side-bar-item">
+                            <span class="me-2"><i class="fa-solid fa-users-rectangle"></i></span>
+                            <span>User List</span>
+                            <span class="right-icon"><i class="fa-solid fa-angle-right"></i></span>
+                            <span class="down-icon"><i class="fa-solid fa-angle-down"></i></span>
+                        </div>
+
+                        <div class="drop-item">
+                            <ul class="drop-item-list">
+                                <li>drop-item</li>
+                                <li>drop-item</li>
+                                <li>drop-item</li>
+                                <li>drop-item</li>
+                                <li>drop-item</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="drop-container mb-2">
+                        <div class="side-bar-item">
+                            <span class="me-2"><i class="fa-solid fa-user-group"></i></span>
+                            <span>Staff</span>
+                            <span class="right-icon"><i class="fa-solid fa-angle-right"></i></span>
+                            <span class="down-icon"><i class="fa-solid fa-angle-down"></i></span>
+                        </div>
+
+                        <div class="drop-item">
+                            <ul class="drop-item-list">
+                                <li>drop-item</li>
+                                <li>drop-item</li>
+                                <li>drop-item</li>
+                                <li>drop-item</li>
+                                <li>drop-item</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </section>
+
+                <section>
+                    <div class="logOut px-3 py-5 fw-bold">
+                        <div class="profileImg me-3">
+                            <img src="./assets/placeholder.png" alt="">
+                        </div>
+
+                        <div>
+                            <span class="ms-3"><i class="fa-solid fa-arrow-right-from-bracket"></i></span>
+                            <span>Log Out</span>
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+        </div>
+
+
+        <main class="main">
+           <div>
+               <div class="container mb-3">
+                   <div class="row">
+                       <div class="col-5">
+
+                            <div class="pickup-overview-container  p-3">
+
+                                <h1 class="fs-5 mb-3">Overview of the Latest Month</h1>
+
+                                <div class="pickup-overview1 mb-4">
+
+                                    <div class="pickup-overviewWrapper">
+                                        <div class="pickup-overview-icon me-2 mt-2"><img src="./assets/Group 217.png" alt=""></div>
+                                        <div class="pickup-overview-content">
+                                            <div class="pickup-overview-text"> Pick Ups</div>
+                                            <div class="pickup-overview-number">70</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="pickup-overviewWrapper">
+                                        <div class="pickup-overview-icon me-2 mt-2"><img src="./assets/Group 293.png" alt=""></div>
+                                        <div class="pickup-overview-content">
+                                            <div class="pickup-overview-text">Pickup Rejected</div>
+                                            <div class="pickup-overview-number">70</div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                                <div class="pickup-overview2">
+
+                                    <div class="pickup-overviewWrapper">
+                                        <div class="pickup-overview-icon me-2 mt-2"><img src="./assets/Group 294.png" alt=""></div>
+                                        <div class="pickup-overview-content">
+                                            <div class="pickup-overview-text">Pickup Delivered</div>
+                                            <div class="pickup-overview-number">70</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="pickup-overviewWrapper">
+                                        <div class="pickup-overview-icon me-3 mt-2"><img src="./assets/Group 295.png" alt=""></div>
+                                        <div class="pickup-overview-content">
+                                            <div class="pickup-overview-text">Pickup Canceled</div>
+                                            <div class="pickup-overview-number">70</div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                                <div class="pickup-totalOverview p-3 mt-5">
+                                    <div class="pick-up-left-total-overview">
+                                        <div class="month">Current Months</div>
+                                        <div class="income">Income</div>
+                                    </div>
+
+                                    <div class="pickup-right-total-overview">
+                                        <div class="pickup-totalCurrency">EURO</div>
+                                        <div class="pickup-totalAmount">33,000.00</div>
+                                    </div>
+                                </div>
+                            </div>
+                       </div>
+
+                       <div class="col-7">
+                           <div class="chartContainer">
+                                <div id="chart_div" ></div>
+
+                           </div>
+
+                       </div>
+                   </div>
+               </div>
+
+               <div class="container">
+                <div class="row">
+                    <div>
+                        <div class="table-responsive mb-3 p-3">
+                            <div class="pickup-table-header p-2">
+
+                                <div class="d-flex align-items-center">
+                                    <div class="pickup-each-header me-5">Pick Up Lists</div>
+                                    <div>
+                                        <input type="search" class="form-control" placeholder="Search Tracking">
+                                    </div>
+                                </div>
+
+                                <div class="fw-bold pickup-each-header"><Span>Overview Of The Latest Month</Span></div>
+                            </div>
+                            <table class="table table-borderless">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Tracking</th>
+                                        <th scope="col">Date</th>
+                                        <th scope="col">Origin</th>
+                                        <th scope="col">Destination</th>
+                                        <th scope="col">Sender</th>
+                                        <th scope="col">Receiver</th>
+                                        <th scope="col">Status</th>
+                                        <th scope="col">Total Cost</th>
+                                        <th scope="col">Invoice Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>G10G20A10</td>
+                                        <td>02-04-2022</td>
+                                        <td>Germany</td>
+                                        <td>Ghana</td>
+                                        <td>James Ben</td>
+                                        <td>Salome Ben</td>
+                                        <td>
+                                            <div class="approved">
+                                                Approved & Pick Up
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="tableCurrency">EURO</span>
+                                            <span>440.00</span>
+                                        </td>
+
+                                        <td>
+                                            <div class="invoiceStatus">
+                                                <span class="me-5">Paid</span>
+                                                <span class="option p-1 text-center">Option</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>G10G20A10</td>
+                                        <td>02-04-2022</td>
+                                        <td>Germany</td>
+                                        <td>Ghana</td>
+                                        <td>James Ben</td>
+                                        <td>Salome Ben</td>
+                                        <td>
+                                            <div class="pending">
+                                                Pending
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="tableCurrency">EURO</span>
+                                            <span>440.00</span>
+                                        </td>
+
+                                        <td>
+                                            <div class="invoiceStatus">
+                                                <span class="me-5">Paid</span>
+                                                <span class="option p-1 text-center">Option</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>G10G20A10</td>
+                                        <td>02-04-2022</td>
+                                        <td>Germany</td>
+                                        <td>Ghana</td>
+                                        <td>James Ben</td>
+                                        <td>Salome Ben</td>
+                                        <td>
+                                            <div class="delivered">
+                                                Delivered & Pick Up
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="tableCurrency">EURO</span>
+                                            <span>440.00</span>
+                                        </td>
+
+                                        <td>
+                                            <div class="invoiceStatus">
+                                                <span class="me-5">Paid</span>
+                                                <span class="option p-1 text-center">Option</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>G10G20A10</td>
+                                        <td>02-04-2022</td>
+                                        <td>Germany</td>
+                                        <td>Ghana</td>
+                                        <td>James Ben</td>
+                                        <td>Salome Ben</td>
+                                        <td>
+                                            <div class="onRoute">
+                                                On Route
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="tableCurrency">EURO</span>
+                                            <span>440.00</span>
+                                        </td>
+
+                                        <td>
+                                            <div class="invoiceStatus">
+                                                <span class="me-3">Pending</span>
+                                                <span class="option p-1 text-center">Option</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>G10G20A10</td>
+                                        <td>02-04-2022</td>
+                                        <td>Germany</td>
+                                        <td>Ghana</td>
+                                        <td>James Ben</td>
+                                        <td>Salome Ben</td>
+                                        <td>
+                                            <div class="pending">
+                                                Pending
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="tableCurrency">EURO</span>
+                                            <span>440.00</span>
+                                        </td>
+
+                                        <td>
+                                            <div class="invoiceStatus">
+                                                <span class="me-3">Pending</span>
+                                                <span class="option p-1 text-center">Option</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>G10G20A10</td>
+                                        <td>02-04-2022</td>
+                                        <td>Germany</td>
+                                        <td>Ghana</td>
+                                        <td>James Ben</td>
+                                        <td>Salome Ben</td>
+                                        <td>
+                                            <div class="onRoute">
+                                                On Route
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="tableCurrency">EURO</span>
+                                            <span>440.00</span>
+                                        </td>
+
+                                        <td>
+                                            <div class="invoiceStatus">
+                                                <span class="me-3">Pending</span>
+                                                <span class="option p-1 text-center">Option</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+
+                            <div class="pagination">
+                                <nav aria-label="Page navigation example">
+                                    <ul class="pagination">
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">
+                                                <span>
+                                                    <i class="fa-solid fa-chevron-left"></i>
+                                                </span>
+                                            </a>
+                                        </li>
+
+                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">
+                                                <span><i class="fa-solid fa-chevron-right"></i></span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               </div>
+
+           </div>
+        </main>
+    </section>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="./script.js"></script>
+    <script>
+        
+        google.charts.load('current', {packages: ['corechart', 'bar']});
+        google.charts.setOnLoadCallback(drawRightY);
+
+        function drawRightY() {
+        var data = google.visualization.arrayToDataTable([
+            ['Month', 'Packages', 'Packages delivered' ],
+            ['January', 550, 800],
+            ['February', 650, 950],
+            ['March', 450, 600],
+            ['April', 600, 850],
+            ['June', 680, 980],
+            ['July', 820, 1000],
+            ['August', 400, 700],
+            ['September', 580, 820]
+           
+        ]);
+
+        var materialOptions = {
+            chart: {
+            title: 'Sales Summary',
+            subtitle: 'Show by Month'
+            },
+            hAxis: {
+            title: '',
+            minValue: 0,
+            },
+            vAxis: {
+            title: 'Sales Summary'
+            },
+            bars: 'vertical',
+            axes: {
+            y: {
+                0: {side: 'left'}
+            }
+            }
+        };
+        var materialChart = new google.charts.Bar(document.getElementById('chart_div'));
+        materialChart.draw(data, materialOptions);
+        }
+
+
+        
+    </script>
+</body>
+
+</html>

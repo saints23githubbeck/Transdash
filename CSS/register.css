@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #ffffff;
+}
+
+:root {
+    --lightPink: #E72ED0;
+    --lightPurple: #721BBE;
+    --darkPurple:#1C0132;
+    --white:#ffffff;
+    --black:#000000;
+}
+
+
+.navContent{
+    display:  flex;
+    justify-content: space-between;
+    padding: 1rem 1rem 3rem 1rem ;
+    position: fixed;
+    width: 100%;
+}
+
+.navList{
+    list-style-type: none;
+}
+
+.nav-list-item{
+    float: left;
+    padding-right: 2rem ;
+}
+
+.nav-list-item:nth-child(1){
+    color: var(--lightPink);
+}
+.nav-list-item:nth-child(2){
+    color: var(--black);
+}
+
+.leftContainer{
+  background-color: var(--darkPurple);
+}
+
+.headerWrap{
+    padding: 10rem 3rem 7rem 3rem;
+}
+
+
+.buttonWrapper{
+    display: flex;
+    column-gap: 2rem;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+
+.logInBtn,
+.registerBtn{
+    border: none;
+    outline: none;
+    width: 9rem;
+    padding: 8px;
+   border-radius: 5px;
+   font-weight: bold;
+}
+
+.logInBtn{
+    border: 2px solid var(--white);
+    background-color:var(--darkPurple);
+    color: var(--white);
+}
+
+.registerBtn{
+    background: var(--white);
+    color: var(--darkPurple);
+}
+h6.miniHeader{
+   width: 45ch;
+}
+
+.footer{
+    margin-top: 6rem;
+    display:  flex;
+    padding: 2rem 4rem 2rem 4rem;
+    column-gap: 2rem;
+    justify-content: center;
+}
+
+.footer a{
+    text-decoration: none;
+}
+
+label{
+    color: var(--black);
+}
+
+.terms{
+    color: var(--lightPurple);
+    font-weight: bold;
+}
+
+
+.btnCreate{
+    background: var(--lightPurple);
+    padding: 8px;
+    outline: none;
+    border: none;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.formHeader h3{
+    color: var(--black);
+}
+
+.now{
+    color:var(--lightPink);
+}.registerNow{
+    margin-top: 5rem;
+}
+
+.logText{
+    color:var(--black);
+}
+
+.logIn{
+    color:var(--lightPurple);
+}
+.row.removePadding>*{
+    padding-left: unset;
+}
+a.removeLink{
+    text-decoration: none;
+    color: var(--white);
+}
+a.removeLink:hover{
+    color: var(--white);
+}
+
+.navLink{
+    color: var(--black);
+    text-decoration: none;
+}
+.navLink:hover{
+    color: var(--black);
+}

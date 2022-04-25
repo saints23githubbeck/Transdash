@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --lightPink: #E72ED0;
+    --lightPurple: #721BBE;
+    --darkPurple:#1C0132;
+    --white:#ffffff;
+    --black:#000000;
+}
+
+#body{
+    background: var(--darkPurple);
+    color: var(--white);
+}
+
+.navContent{
+    display:  flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.navList{
+    list-style-type: none;
+}
+
+.nav-list-item{
+    float: left;
+    padding-right: 2rem;
+}
+
+.nav-list-item:nth-child(1){
+    color: var(--lightPink);
+}
+
+a{
+    text-decoration: none;
+}
+.buttonWrapper{
+    display: flex;
+    column-gap: 2rem;
+}
+
+.heroWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem 25rem 10rem 25rem;
+}
+
+.logInBtn,
+.registerBtn{
+    border: none;
+    outline: none;
+    width: 9rem;
+    padding: 8px;
+   border-radius: 5px;
+   font-weight: bold;
+}
+
+.logInBtn{
+    border: 2px solid var(--white);
+    background-color: var(--darkPurple);
+    color: var(--white);
+}
+
+.registerBtn{
+    background: var(--white);
+    color: var(--darkPurple);
+}

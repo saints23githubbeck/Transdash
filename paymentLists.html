@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRANSDASH | Payment Lists </title>
+    <link rel="stylesheet" href="./CSS/paymentsList.css">
+    <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/ca2912634d.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="body">
+
+
+    <nav class="navContainer p-3 fw-bold">
+        <div class="left-top-nav">
+            <div class="logoName">Transdash</div>
+        </div>
+        <div class="right-top-nav">
+            <div class="me-5">
+                <button class="create-shipment-btn">Create Shipment</button>
+            </div>
+
+            <div class="me-3">
+                <select name="" id="">
+                    <option value="">EN</option>
+                    <option value="">Fer</option>
+                    <option value="">Spn</option>
+                </select>
+            </div>
+
+            <div class="notification me-3">
+                <span><i class="fa-solid fa-bell"></i></span>
+                <span class="notification-dot"></span>
+            </div>
+
+            <div class="profileImg me-3">
+                <img src="./assets/placeholder.png" alt="">
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <div class="sideBar">
+            <div class="sideBarContent">
+
+                <section class="mb-5">
+                    <a href="./dashboard.html">
+                        <div class="side-bar-item mb-2">
+                            <span class="me-2"><i class="fa-solid fa-border-all"></i></span>
+                            <span>Dashboard</span>
+                        </div>
+                    </a>
+
+                    <div class="drop-container mb-2">
+                        <div class="side-bar-item">
+                            <span class="me-2"><i class="fa-solid fa-box-open"></i></i></span>
+                            <span>Shipment</span>
+                            <span class="right-icon"><i class="fa-solid fa-angle-right"></i></span>
+                            <span class="down-icon"><i class="fa-solid fa-angle-down"></i></span>
+                        </div>
+
+                        <div class="drop-item">
+                            <ul class="drop-item-list">
+                                <a href="./dashboardShipments.html">
+                                    <li class="drop-link">Dashboard Shipments</li>
+                                </a>
+                                <a href="./createMultipleShipments.html">
+                                    <li class="drop-link">Create Mulitple Shipments</li>
+                                </a>
+
+                                <a href="./createShipments.html">
+                                    <li class="drop-link">Create Shipments</li>
+                                </a>
+
+                                <a href="./shipmentLists.html">
+                                    <li class="drop-link">Shipments Lists</li>
+                                </a>
+
+                                <a href="./paymentLists.html">
+                                    <li class="drop-link">Payment Lists</li>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="drop-container mb-2">
+                        <div class="side-bar-item">
+                            <span class="me-2"><i class="fa-solid fa-id-card-clip"></i></span>
+                            <span>Pickup</span>
+                            <span class="right-icon"><i class="fa-solid fa-angle-right"></i></span>
+                            <span class="down-icon"><i class="fa-solid fa-angle-down"></i></span>
+                        </div>
+
+                        <div class="drop-item">
+                            <ul class="drop-item-list">
+                                <a href="./dashboardPickups.html">
+                                    <li class="drop-link">Dashboard Pickups</li>
+                                </a>
+
+                                <a href="./pickUpLists.html">
+                                    <li class="drop-link">Pick Up List</li>
+                                </a>
+
+                                <a href="./createPickUp.html">
+                                    <li class="drop-link">Create Pick Up</li>
+                                </a>
+                                
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="drop-container mb-2">
+                        <div class="side-bar-item">
+                            <span class="me-2"><i class="fa-solid fa-credit-card"></i></span>
+                            <span>Transaction</span>
+                            <span class="right-icon"><i class="fa-solid fa-angle-right"></i></span>
+                            <span class="down-icon"><i class="fa-solid fa-angle-down"></i></span>
+                        </div>
+
+                        <div class="drop-item">
+                            <ul class="drop-item-list">
+                                <a href="./dashboardAccountReceiveable.html">
+                                    <li class="drop-link">Dashboard Accounts Receiveable</li>
+                                </a>
+
+                                <a href="./accountReceiveable.html">
+                                    <li class="drop-link">Account Receiveable</li>
+                                </a>
+
+                                <a href="./transactionPaymentList.html">
+                                    <li class="drop-link">Payment List</li>
+                                </a>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="drop-container mb-2">
+                        <div class="side-bar-item">
+                            <span class="me-2"><i class="fa-solid fa-gift"></i></span>
+                            <span>Consolidate</span>
+                            <span class="right-icon"><i class="fa-solid fa-angle-right"></i></span>
+                            <span class="down-icon"><i class="fa-solid fa-angle-down"></i></span>
+                        </div>
+
+                        <div class="drop-item">
+                            <ul class="drop-item-list">
+                                <li>drop-item</li>
+                                <li>drop-item</li>
+                                <li>drop-item</li>
+                                <li>drop-item</li>
+                                <li>drop-item</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </section>
+
+                <section class="mb-5">
+
+                    <div class="drop-container mb-2">
+                        <div class="side-bar-item">
+                            <span class="me-2"><i class="fa-solid fa-cart-shopping"></i></span>
+                            <span>Online Shopping</span>
+                            <span class="right-icon"><i class="fa-solid fa-angle-right"></i></span>
+                            <span class="down-icon"><i class="fa-solid fa-angle-down"></i></span>
+                        </div>
+
+                        <div class="drop-item">
+                            <ul class="drop-item-list">
+                                <li>drop-item</li>
+                                <li>drop-item</li>
+                                <li>drop-item</li>
+                                <li>drop-item</li>
+                                <li>drop-item</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="drop-container mb-2">
+                        <div class="side-bar-item">
+                            <span class="me-2"><i class="fa-solid fa-sliders"></i></span>
+                            <span>Shipping Settings</span>
+                            <span class="right-icon"><i class="fa-solid fa-angle-right"></i></span>
+                            <span class="down-icon"><i class="fa-solid fa-angle-down"></i></span>
+                        </div>
+
+                        <div class="drop-item">
+                            <ul class="drop-item-list">
+                                <li>drop-item</li>
+                                <li>drop-item</li>
+                                <li>drop-item</li>
+                                <li>drop-item</li>
+                                <li>drop-item</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="side-bar-item mb-2">
+                        <span class="me-2"><i class="fa-solid fa-gear"></i></span>
+                        <span>General Settings</span>
+                    </div>
+
+                    <div class="side-bar-item mb-2">
+                        <span class="me-2"><i class="fa-solid fa-chart-column"></i></span>
+                        <span>General Report</span>
+                    </div>
+
+                </section>
+
+                <section class="mb-5">
+                    <div class="drop-container mb-2">
+                        <div class="side-bar-item">
+                            <span class="me-2"><i class="fa-solid fa-users-rectangle"></i></span>
+                            <span>User List</span>
+                            <span class="right-icon"><i class="fa-solid fa-angle-right"></i></span>
+                            <span class="down-icon"><i class="fa-solid fa-angle-down"></i></span>
+                        </div>
+
+                        <div class="drop-item">
+                            <ul class="drop-item-list">
+                                <li>drop-item</li>
+                                <li>drop-item</li>
+                                <li>drop-item</li>
+                                <li>drop-item</li>
+                                <li>drop-item</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="drop-container mb-2">
+                        <div class="side-bar-item">
+                            <span class="me-2"><i class="fa-solid fa-user-group"></i></span>
+                            <span>Staff</span>
+                            <span class="right-icon"><i class="fa-solid fa-angle-right"></i></span>
+                            <span class="down-icon"><i class="fa-solid fa-angle-down"></i></span>
+                        </div>
+
+                        <div class="drop-item">
+                            <ul class="drop-item-list">
+                                <li>drop-item</li>
+                                <li>drop-item</li>
+                                <li>drop-item</li>
+                                <li>drop-item</li>
+                                <li>drop-item</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </section>
+
+                <section>
+                    <div class="logOut px-3 py-5 fw-bold">
+                        <div class="profileImg me-3">
+                            <img src="./assets/placeholder.png" alt="">
+                        </div>
+
+                        <div>
+                            <span class="ms-3"><i class="fa-solid fa-arrow-right-from-bracket"></i></span>
+                            <span>Log Out</span>
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+        </div>
+
+
+        <main class="main">
+            <div class="container">
+                <div class="row mb-3">
+                    <div class="col">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Search by Transaction">
+                            <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
+                          </div>
+                    </div>
+
+                    <div class="col">
+                        <select class="form-select">
+                            <option selected>Select gateway</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+
+                    <div class="col">
+                        <div class="mt-1">
+                            <span>Business Location: </span>
+                            <span class="fw-bold">Ghana, Accra</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            
+    
+            </div>
+
+            <div class="container mb-5">
+                <div class="row">
+                    <div>
+                        <div class="table-responsive mb-3 p-3 text-center">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Payment Method</th>
+                                        <th scope="col">Tracking Number</th>
+                                        <th scope="col">Date</th>
+                                        <th scope="col">Status</th>
+                                        <th scope="col">Receipt</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Credit Card</td>
+                                        <td>G10G20A10</td>
+                                        <td>02-04-2022</td>
+                                        <td>Delivered & Pick Up</td>
+                                        <td>
+                                            <div class="download-btn p-2">
+                                                Download
+                                            </div>
+                                        </td>
+                                       
+                                    </tr>
+
+                                    <tr>
+                                        <td>Echeck</td>
+                                        <td>G10G20A10</td>
+                                        <td>02-04-2022</td>
+                                        <td>Approved</td>
+                                        <td>
+                                            <div class="download-btn p-2">
+                                                Download
+                                            </div>
+                                        </td>
+                                       
+                                    </tr>
+
+                                    <tr>
+                                        <td>Credit Card</td>
+                                        <td>G10G20A10</td>
+                                        <td>02-04-2022</td>
+                                        <td>Delivered</td>
+                                        <td>
+                                            <div class="download-btn p-2">
+                                                Download
+                                            </div>
+                                        </td>
+                                       
+                                    </tr>
+
+                                    <tr>
+                                        <td>Stripe</td>
+                                        <td>G10G20A10</td>
+                                        <td>02-04-2022</td>
+                                        <td>Approved</td>
+                                        <td>
+                                            <div class="download-btn p-2">
+                                                Download
+                                            </div>
+                                        </td>
+                                       
+                                    </tr>
+
+                                    <tr>
+                                        <td>PayPal</td>
+                                        <td>G10G20A10</td>
+                                        <td>02-04-2022</td>
+                                        <td>Approved</td>
+                                        <td>
+                                            <div class="download-btn p-2">
+                                                Download
+                                            </div>
+                                        </td>
+                                       
+                                    </tr>
+
+                                    <tr>
+                                        <td>PayStack</td>
+                                        <td>G10G20A10</td>
+                                        <td>02-04-2022</td>
+                                        <td>Delivered & Pick Up</td>
+                                        <td>
+                                            <div class="download-btn p-2">
+                                                Download
+                                            </div>
+                                        </td>
+                                       
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+
+                       
+
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+    </section>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

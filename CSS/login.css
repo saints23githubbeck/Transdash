@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --lightPink: #E72ED0;
+    --lightPurple: #721BBE;
+    --darkPurple:#1C0132;
+    --white:#ffffff;
+    --black:#000000;
+}
+
+
+.navContent{
+    display:  flex;
+    justify-content: space-between;
+    padding: 1rem 1rem 3rem 1rem ;
+    position: fixed;
+    width: 100%;
+}
+
+.navList{
+    list-style-type: none;
+}
+
+.navLink{
+    color: var(--black);
+    text-decoration: none;
+}
+.navLink:hover{
+    color: var(--black);
+}
+.nav-list-item{
+    float: left;
+    padding-right: 2rem ;
+}
+
+.nav-list-item:nth-child(1){
+    color:var(--lightPink);
+}
+.nav-list-item:nth-child(2){
+    color: var(--black);
+}
+
+.leftContainer{
+  background-color: var(--darkPurple);
+  color: var(--white);
+}
+
+.headerWrap{
+    padding: 10rem 3rem 7rem 3rem;
+}
+
+
+.buttonWrapper{
+    display: flex;
+    column-gap: 2rem;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+
+.logInBtn,
+.registerBtn{
+    border: none;
+    outline: none;
+    width: 9rem;
+    padding: 8px;
+   border-radius: 5px;
+   font-weight: bold;
+}
+
+.logInBtn{
+    border: 2px solid var(--white);
+    background-color: var(--white);
+    color: var(--lightPurple);
+}
+
+.registerBtn{
+    background: transparent;
+    color: var(--white);
+    border: 2px solid var(--white);
+}
+h6.miniHeader{
+   width: 45ch;
+}
+
+.footer{
+    margin-top: 6rem;
+    display:  flex;
+    padding: 2rem 4rem 2rem 4rem;
+    column-gap: 2rem;
+    justify-content: center;
+}
+
+.footer a{
+    text-decoration: none;
+}
+
+label{
+    color: var(--black);
+}
+
+
+.formHeader h3{
+    color:var(--black);
+    padding-top: 5rem;
+}
+
+.row.removePadding>*{
+    padding-left: unset;
+}
+a.removeLink{
+    text-decoration: none;
+    color: var(--white);
+}
+a.removeLink:hover{
+    color:var(--white);
+}
+
+.forgotPassword,
+.rememberMe{
+    color: var(--lightPurple);
+}
+
+.forgotRemember{
+    display:  flex;
+    justify-content: space-between;
+}
+
+.btnLogin{
+    background: var(--lightPurple);
+    padding: 8px;
+    outline: none;
+    border: none;
+    width: 100%;
+    border-radius: 4px;
+}
+
+form{
+    padding: 0 5rem 0 5rem;
+}
+.icon{
+    color: var(--lightPurple);
+    
+}
+
+#basic-addon1{
+    background: var(--white);
+}
+

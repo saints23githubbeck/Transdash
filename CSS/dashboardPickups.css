@@ -1,0 +1,302 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --lightPink: #E72ED0;
+    --lightPurple: #721BBE;
+    --darkPurple: #1C0132;
+    --white: #ffffff;
+    --black: #0000000;
+    --color1: #CCE0FF;
+    --color2: #ECFECC;
+    --color3: #F6CDFD;
+    --color4: #CDFDFE;
+}
+
+.body {
+    background: #F8F0FD;
+}
+
+.navContainer {
+    display: flex;
+    background: var(--darkPurple);
+    color: var(--white);
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.right-top-nav {
+    display: flex;
+    align-items: center;
+}
+
+.create-shipment-btn {
+    border: none;
+    outline: none;
+    padding: 8px;
+    width: 9rem;
+    background: var(--lightPurple);
+    color: var(--white);
+    border-radius: 5px;
+}
+
+.profileImg {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.profileImg>img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+
+select {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.notification {
+    position: relative;
+    cursor: pointer;
+}
+
+.notification-dot {
+    position: absolute;
+    right: 1%;
+    top: 5%;
+    height: 0.6rem;
+    width: 0.6rem;
+    background: #ff0000;
+    border-radius: 50%;
+}
+
+
+.sideBar {
+    background: var(--darkPurple);
+    width: 15rem;
+    position: fixed;
+    height: 100%;
+    color: var(--white);
+    overflow: auto;
+}
+
+.sideBar a{
+    text-decoration: none;
+    color: var(--white);
+}
+
+.drop-link{
+    text-decoration: none;
+    padding: 0.3rem;
+}
+
+.drop-link:hover{
+    background: var(--white);
+    color: var(--lightPurple);
+}
+
+.drop-item-list{
+    margin-top: 0.6rem;
+}
+.drop-item-list a{
+    margin-bottom: 0.6rem;
+}
+
+.sideBar::-webkit-scrollbar{
+    width: 0;
+}
+
+.sideBarContent {
+    padding-top: 6rem
+}
+
+.side-bar-item {
+    font-weight: 600;
+    cursor: pointer;
+    padding: 0.4rem 0rem 0.4rem 1.3rem;
+    position: relative;
+}
+
+.side-bar-item:hover {
+    background: var(--white);
+    color: var(--lightPurple);
+}
+
+.drop-item ul {
+    list-style-type: none;
+}
+
+.drop-item {
+    display: none;
+}
+
+.show-drop-item {
+    display: block;
+}
+
+.right-icon,
+.down-icon {
+    position: absolute;
+    right: 8%;
+}
+
+.down-icon {
+    display: none;
+}
+
+.showIcon {
+    display: inline-block;
+}
+
+.hideIcon {
+    display: none;
+}
+
+.logOut {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-top: 1px solid var(--white);
+}
+
+
+/* mainSection styles */
+.main {
+    padding-top: 6rem;
+    margin-left: 15rem;
+}
+
+.pickup-overview1,
+.pickup-overview2{
+    display: flex;
+    justify-content: space-between;
+}
+
+.pickup-overviewWrapper{
+    display: flex;
+}
+.pickup-overview-container{
+    background: var(--white);
+    font-weight: 600;
+}
+
+#chart_div,
+.pickup-overview-container{
+    min-height: 20rem;
+}
+
+.pickup-totalOverview{
+    display: flex;
+    justify-content: space-between;
+    background: var(--darkPurple);
+    color: var(--white);
+    font-weight: 600;
+}
+
+
+.table-responsive {
+    background: var(--white);
+}
+
+.pickup-table-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 600;
+}
+
+.pickup-each-header {
+    cursor: pointer;
+}
+
+
+.pickup-each-header:hover {
+    color: var(--lightPink);
+}
+
+
+.table td:nth-child(8) {
+    color: #0000ff;
+    font-weight: 600;
+}
+
+.table td:nth-child(1) {
+    color: #4829d0;
+    cursor: pointer;
+}
+
+.table td:nth-child(1):hover {
+    color: var(--lightPink);
+}
+
+
+
+.pagination {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.page-item .page-link {
+    border: none;
+    color: var(--black);
+}
+
+.page-item .page-link:hover {
+    background: var(--lightPink);
+    color: var(--white);
+}
+
+.page-item .page-link:focus {
+    border: none;
+    outline: none;
+    box-shadow: unset;
+    background: var(--lightPink);
+}
+
+
+.pending {
+    background: #E8D8F3;
+    text-align: center;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.delivered,
+.approved {
+    background: var(--color1);
+    text-align: center;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.onRoute{
+    background: var(--color1);
+    text-align: center;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.invoiceStatus{
+    color: #0000ff;
+    font-weight: 600;
+    display: inline-flex;
+   align-items: center;
+}
+
+.option{
+    background: #0000ff;
+    color: var(--white);
+    cursor: pointer;
+}
