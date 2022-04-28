@@ -1,0 +1,281 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --lightPink: #E72ED0;
+    --lightPurple: #721BBE;
+    --darkPurple: #1C0132;
+    --white: #ffffff;
+    --black: #0000000;
+    --color1: #CCE0FF;
+    --color2: #ECFECC;
+    --color3: #F6CDFD;
+    --color4: #CDFDFE;
+}
+
+.body {
+    background: #F8F0FD;
+}
+
+.navContainer {
+    display: flex;
+    background: var(--darkPurple);
+    color: var(--white);
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.right-top-nav {
+    display: flex;
+    align-items: center;
+}
+
+.create-shipment-btn {
+    border: none;
+    outline: none;
+    padding: 8px;
+    width: 9rem;
+    background: var(--lightPurple);
+    color: var(--white);
+    border-radius: 5px;
+}
+
+.profileImg {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.profileImg>img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+
+select {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.notification {
+    position: relative;
+    cursor: pointer;
+}
+
+.notification-dot {
+    position: absolute;
+    right: 1%;
+    top: 2%;
+    height: 0.8rem;
+    width: 0.8rem;
+    background: #ff0000;
+    border-radius: 50%;
+    font-size: 7px;
+    font-weight: bolder;
+}
+
+.fa-bell {
+    font-size: 1.3rem;
+}
+
+
+.sideBar {
+    background: var(--darkPurple);
+    width: 18rem;
+    position: fixed;
+    height: 100%;
+    color: var(--white);
+    overflow: auto;
+}
+
+.sideBar a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.drop-link {
+    text-decoration: none;
+    padding: 0.3rem;
+}
+
+.drop-link:hover {
+    background: var(--white);
+    color: var(--lightPurple);
+}
+
+.drop-item-list {
+    margin-top: 0.6rem;
+}
+
+.drop-item-list a {
+    margin-bottom: 0.6rem;
+}
+
+.sideBar::-webkit-scrollbar {
+    width: 0;
+}
+
+.sideBarContent {
+    padding-top: 6rem
+}
+
+.side-bar-item {
+    font-weight: 600;
+    cursor: pointer;
+    padding: 0.4rem 0rem 0.4rem 1.3rem;
+    position: relative;
+}
+
+.side-bar-item:hover {
+    background: var(--white);
+    color: var(--lightPurple);
+}
+
+.drop-item ul {
+    list-style-type: none;
+}
+
+.drop-item {
+    display: none;
+}
+
+.show-drop-item {
+    display: block;
+}
+
+.right-icon,
+.down-icon {
+    position: absolute;
+    right: 8%;
+}
+
+.down-icon {
+    display: none;
+}
+
+.showIcon {
+    display: inline-block;
+}
+
+.hideIcon {
+    display: none;
+}
+
+.logOut {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-top: 1px solid var(--white);
+}
+
+
+/* mainSection styles */
+.main {
+    padding-top: 6rem;
+    margin-left: 18rem;
+}
+
+#chart_div,
+.consolidatedContainer {
+    min-height: 20rem;
+}
+
+.consolidatedContainer{
+    background: var(--white);
+    position: relative;
+}
+
+.containerBottom{
+    background: var(--darkPurple);
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    color: var(--white);
+}
+
+input.form-control:focus{
+    border: 1px solid var(--lightPurple);
+    box-shadow: none;
+}
+
+input.form-control{
+    border: 1px solid var(--lightPurple);
+}
+
+.table-responsive {
+    background: var(--white);
+}
+
+.tableHeader {
+    display: flex;
+    align-items: center;
+    column-gap: 1.5%;
+    font-weight: 600;
+}
+
+.table-responsive .table>:not(caption)>*>* {
+    padding: 1rem 0.3rem 1rem 0.3rem;
+}
+
+
+.table td:nth-child(8) {
+    color: #0000ff;
+    font-weight: 600;
+}
+
+.table td:nth-child(1) {
+    color: #4829d0;
+    cursor: pointer;
+}
+
+.table td:nth-child(1):hover {
+    color: var(--lightPink);
+}
+
+
+.pending {
+    background: #E8D8F3;
+    text-align: center;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.delivered,
+.approved {
+    background: var(--color1);
+    text-align: center;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.pagination {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.page-item .page-link {
+    border: none;
+    color: var(--black);
+}
+
+.page-item .page-link:hover {
+    background: var(--lightPink);
+    color: var(--white);
+}
+
+.page-item .page-link:focus {
+    border: none;
+    outline: none;
+    box-shadow: unset;
+    background: var(--lightPink);
+}

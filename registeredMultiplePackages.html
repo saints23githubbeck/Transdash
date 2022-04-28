@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TRANSDASH | Create Multiple Shipments</title>
-    <link rel="stylesheet" href="./CSS/createMultipleShipment.css">
+    <title>TRANSDASH | Regsitered Multiple Packages</title>
+    <link rel="stylesheet" href="./CSS/registeredMultiplePackages.css">
     <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/ca2912634d.js" crossorigin="anonymous"></script>
 </head>
@@ -79,8 +79,16 @@
                                     <li class="drop-link">Shipments Lists</li>
                                 </a>
 
+                                <a href="./packageLists.html">
+                                    <li class="drop-link">Package List</li>
+                                </a>
+
                                 <a href="./paymentLists.html">
                                     <li class="drop-link">Payment Lists</li>
+                                </a>
+
+                                <a href="./listOfPreAlert.html">
+                                    <li class="drop-link">List Of Pre Alert</li>
                                 </a>
                             </ul>
                         </div>
@@ -296,47 +304,46 @@
         </div>
 
 
-        <main class="main mb-4">
-            
+        <main class="main mb-4">    
 
             <div class="container">
                 <div class="row">
                     <div class="col-5">
-                        <div class="shipment-create-list p-3">
+                        <div class="registered-multiple-container p-3">
                             <div>
-                                <h1>Add Create Shipments</h1>
+                                <h1 class="fs-5 mb-4 fw-bold">Register Multiple Packages</h1>
                             </div>
     
                             <div>
                                 <div>
-                                    <h6>Shipment Profix</h6>
-                                    <select class="form-select mb-5">
-                                        <option selected>Country Profix</option>
+                                    <h6>Shipment Prefix</h6>
+                                    <select class="form-select mb-3">
+                                        <option selected>Country Prefix</option>
                                         <option value="1">One</option>
                                         <option value="2">Two</option>
                                         <option value="3">Three</option>
                                       </select>
                                 </div>
-
+                                
                                 <div>
                                     <h6>Agency List</h6>
 
-                                    <div class="mb-5">
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </div>
-                                
-                                <div>
-                                    <h6>Origin Office</h6>
-
-                                    <div class="mb-5">
+                                    <div class="mb-3">
                                         <input type="text" class="form-control">
                                       </div>
                                 </div>
 
-                                <div class="senderInfo mt-3">
-                                    <div class="senderInfoHeader">
-                                        <span class="senderInfoIcon me-3"><i class="fa-solid fa-circle-info"></i></span>
+                                <div>
+                                    <h6>Origin Office</h6>
+
+                                    <div class="mb-3">
+                                        <input type="text" class="form-control">
+                                      </div>
+                                </div>
+
+                                <div class="registered-multiple-senderInfo mt-5">
+                                    <div class="registered-multiple-senderInfoHeader">
+                                        <span class="registered-multiple-senderInfoIcon me-3"><i class="fa-solid fa-circle-info"></i></span>
                                         <span class="fw-bold">Sender Information</span>
                                     </div>
 
@@ -357,9 +364,9 @@
                                     </div>
                                 </div>
 
-                                <div class="recipentInfo mt-3">
-                                    <div class="recipentInfoHeader">
-                                        <span class="recipentInfoIcon me-3"><i class="fa-solid fa-circle-info"></i></span>
+                                <div class="registered-multiple-recipentInfo mt-4">
+                                    <div class="registered-multiple-recipentInfoHeader">
+                                        <span class="registered-multiple-recipentInfoIcon me-3"><i class="fa-solid fa-circle-info"></i></span>
                                         <span class="fw-bold">Recipent Information</span>
                                     </div>
 
@@ -383,9 +390,10 @@
                         </div>
                     </div>
                     <div class="col-7">
-                        <div class="package-info p-3">
-                            <div class="packageInfoHeader">
-                                <span class="packageInfoIcon me-3"><i class="fa-solid fa-circle-info"></i></span>
+                        <div class="registered-multiple-package-info p-3">
+
+                            <div class="registered-multiple-packageInfoHeader">
+                                <span class="registered-multiple-packageInfoIcon me-3"><i class="fa-solid fa-circle-info"></i></span>
                                 <span class="fw-bold">Packages Info: </span>
                             </div>
 
@@ -422,16 +430,23 @@
                                       <input type="text" class="form-control" id="inputZip">
                                   </div>
 
-                                  <button class="addPackages p-2 fw-bold">
-                                      <span><i class="fa-solid fa-plus"></i></span>
-                                    <span> Add Boxes or Packages</span>
-                                  </button>
+                                  <div class="buttonContainer d-flex justify-content-between">
+                                        <button class="addPackages p-2 fw-bold">
+                                            <span><i class="fa-solid fa-plus"></i></span>
+                                            <span> Add Boxes or Packages</span>
+                                        </button>
+
+                                        <button class="createInvoice p-2 fw-bold">
+                                            <span><i class="fa-solid fa-file-invoice"></i></span>
+                                            <span>Create Invoice</span>
+                                        </button>
+                                  </div>
                             </form>
 
-                            <div class="total mt-3 mb-2">
-                                <div class="totalHeader fw-bold mb-3">Total</div>
+                            <div class="registered-multiple-total mt-3 mb-2">
+                                <div class="registered-multiple-totalHeader fw-bold mb-3">Total</div>
 
-                                <div class="totalContainer mb-2">
+                                <div class="registered-multiple-totalContainer mb-2">
                                     <div class="poundTotal">
                                         <div>Total Pounds Weight</div>
                                         <div>75.00</div>
@@ -452,8 +467,8 @@
 
                             </div>
 
-                            <div class="subTotal mt-3">
-                                <div class="subTotalHeader fw-bold mb-3">Sub-Total</div>
+                            <div class="registered-multiple-subTotal mt-3">
+                                <div class="registered-multiple-subTotalHeader fw-bold mb-3">Sub-Total</div>
 
                                 <form class="row g-3">
 
@@ -482,7 +497,7 @@
                                       </div>
       
                                       <div class="col-md-4">
-                                          <label for="inputZip" class="form-label">Custom Tariffs %</label>
+                                          <label class="form-label">Custom Tariffs %</label>
                                           <input type="text" class="form-control" id="inputZip">
                                       </div>
       
@@ -527,7 +542,7 @@
                                       </div>
                                 </form>
 
-                                <div class="courierFee p-3 mt-4 fw-bold">
+                                <div class="registered-multiple-courierFee p-3 mt-4 fw-bold">
                                     <div>
                                         <span class="me-3">COURIER FEE</span>
                                         <span>USD</span>
@@ -538,13 +553,13 @@
                                 </div>
 
                                 <div class="mt-3 d-flex justify-content-end">
-                                    <button class="create-invoice p-1">
+                                    <button class="create-invoice-Btn p-1">
                                         <span><i class="fa-solid fa-file-invoice"></i></span>
                                         <span>Create Invoice</span>
                                     </button>
                                 </div>
                             </div>        
-                            
+                              
                         </div>
                     </div>
                 </div>
@@ -552,11 +567,11 @@
         </main>
     </section>
 
-    <section class="main-2">
+    <section class="registered-multiple-main-2 p-3">
         <div class="container">
             <div class="row">
-                <div class="shipmentHeader">
-                    <span class="shipmentIcon"><i class="fa-solid fa-circle-info"></i></span>
+                <div class="registered-multiple-shipmentHeader">
+                    <span class="registered-multiple-shipmentIcon"><i class="fa-solid fa-circle-info"></i></span>
                     <span class="fw-bold">Shipment Info :</span>
                 </div>
 
@@ -564,22 +579,22 @@
                 <form class="row g-3 mb-5">
                             
                     <div class="col-md-3">
-                      <label  class="form-label">Servicing Shipping</label>
+                      <label  class="form-label">Tracking</label>
                       <input type="text" class="form-control">
                     </div>
 
                     <div class="col-md-3">
-                        <label for="inputZip" class="form-label">Payment Method</label>
+                        <label for="inputZip" class="form-label">store/supplier</label>
                         <input type="text" class="form-control" id="inputZip">
                     </div>
 
                     <div class="col-md-3">
-                        <label  class="form-label">Courier Company</label>
+                        <label  class="form-label">purchase price</label>
                         <input type="text" class="form-control" >
                     </div>
 
                     <div class="col-md-3">
-                        <label  class="form-label">Delivery Status</label>
+                        <label  class="form-label">service shipping</label>
                         <input type="text" class="form-control">
                       </div>
   
@@ -589,7 +604,7 @@
                       </div>
   
                       <div class="col-md-3">
-                          <label for="inputZip" class="form-label">Payment Methods</label>
+                          <label for="inputZip" class="form-label">Courier Company</label>
                           <input type="text" class="form-control" >
                       </div>
   

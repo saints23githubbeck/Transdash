@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TRANSDASH | Dashboard Account Receiveable</title>
-    <link rel="stylesheet" href="./CSS/dashboardAccountReceiveable.css">
+    <title>TRANSDASH | Dashboard Package</title>
+    <link rel="stylesheet" href="./CSS/dashboardPackages.css">
     <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/ca2912634d.js" crossorigin="anonymous"></script>
 </head>
@@ -197,6 +197,10 @@
                                 </a>
 
                                 <a href="./packageLists.html">
+                                    <li class="drop-link">Package Lists</li>
+                                </a>
+
+                                <a href="./packageLists.html">
                                     <li class="drop-link">Package List</li>
                                 </a>
 
@@ -295,338 +299,305 @@
             </div>
         </div>
 
+
         <main class="main">
-            <div class="container-fluid mb-5">
+            <div class="container mb-3">
                 <div class="row">
+
                     <div class="col-5">
-                        <div class="accountSummaryContainer fw-bold p-3">
-                            <h1 class="fs-6">Account Receiveable Summary of the Latest Month</h1>
-                            <div class="section-1 d-flex justify-content-between border-bottom mb-5">
+                        <div class="dashboardPackage p-3">
+                            <h1 class="fs-5">Overview of the Latest Month</h1>
+
+                            <div class="overviewSummary-1 d-flex justify-content-between mb-4">
+
+                                <a href="./packageLists.html">
+                                    <div class="eachWrapper d-flex">
+                                        <div class="icon-wrapper me-3 mt-2"><img src="./assets/Group 218.png" alt=""></div>
+                                        <div class="contentWrapper ">
+                                            <div>Packages Registered</div>
+                                            <div>Paid</div>
+                                            <div>7</div>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <div class="eachWrapper d-flex">
+                                    <div class="icon-wrapper me-3 mt-2"><img src="./assets/Group 218 (1).png" alt="">
+                                    </div>
+                                    <div class="contentWrapper ">
+                                        <div>Packages Registered</div>
+                                        <div>7</div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="overviewSummary-2 d-flex justify-content-between">
+                                <div class="eachWrapper d-flex">
+                                    <div class="icon-wrapper me-3 mt-2"><img src="./assets/Group 218 (2).png" alt="">
+                                    </div>
+                                    <div class="contentWrapper ">
+                                        <div>Packages Pre Alert</div>
+                                        <div>7</div>
+                                    </div>
+
+                                </div>
+                                <div class="eachWrapper d-flex">
+                                    <div class="icon-wrapper me-3 mt-2"><img src="./assets/Group 218 (3).png" alt="">
+                                    </div>
+                                    <div class="contentWrapper ">
+                                        <div>Packages Registered</div>
+                                        <div>Pending</div>
+                                        <div>7</div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="bottomContainer d-flex justify-content-between p-3 mt-5">
                                 <div>
-                                    <div>Total Accounts</div>
-                                    <div>Receiveable</div>
+                                    <div>Current Months</div>
+                                    <div>Income</div>
                                 </div>
 
                                 <div>
-                                    <div>USD</div>
-                                    <div>400.01</div>
+                                    <div>EURO</div>
+                                    <div>15,000.00</div>
                                 </div>
                             </div>
-                            <div class="section-2 d-flex justify-content-between mb-5 border-bottom ">
-                                <div>
-                                    <div>Total Accounts</div>
-                                    <div>Paid</div>
-                                </div>
 
-                                <div>
-                                    <div>USD</div>
-                                    <div>400.01</div>
-                                </div>
-                            </div>
-                            <div class="section-3 d-flex justify-content-between">
-                                <div>
-                                    <div>Total Pending</div>
-                                    <div>Accounts</div>
-                                </div>
-
-                                <div>
-                                    <div>USD</div>
-                                    <div>4200.01</div>
-                                </div>
-                            </div>
                         </div>
                     </div>
+
                     <div class="col-7">
                         <div class="chartContainer">
                             <div id="chart_div"></div>
+
                         </div>
+
                     </div>
+
                 </div>
             </div>
 
-            <div class="container-fluid">
+            <div class="container">
                 <div class="row">
                     <div>
-                        <div class="table-responsive mb-3 p-3">
-                            <div class="d-flex justify-content-between align-items-center p-2">
+                        <div>
+                            <div class="table-responsive mb-3 p-3 text-center">
+                                <div class="pickup-table-header p-2">
 
-                                <div class="d-flex align-items-center">
-                                    <div class="me-5 fw-bold">Account Receiveable</div>
-                                    <div>
-                                        <input type="search" class="form-control" placeholder="Search Tracking">
+                                    <div class="d-flex align-items-center">
+                                        <div class="pickup-each-header me-5">Pick Up Lists</div>
+                                        <div>
+                                            <input type="search" class="form-control" placeholder="Search Tracking">
+                                        </div>
+                                    </div>
+
+                                    <div class="fw-bold pickup-each-header"><Span>Overview Of The Latest Month</Span>
                                     </div>
                                 </div>
 
-                                <div class="fw-bold"><Span>Overview Of The Latest Month</Span></div>
+                                <table class="table table-borderless">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Tracking</th>
+                                            <th scope="col">Date</th>
+                                            <th scope="col">Origin</th>
+                                            <th scope="col">Destination</th>
+                                            <th scope="col">Sender</th>
+                                            <th scope="col">Receiver</th>
+                                            <th scope="col">Status</th>
+                                            <th scope="col">Total Cost</th>
+                                            <th scope="col">Invoice Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>G10G20A10</td>
+                                            <td>02-04-2022</td>
+                                            <td>Germany</td>
+                                            <td>Ghana</td>
+                                            <td>James Ben</td>
+                                            <td>Salome Ben</td>
+                                            <td>
+                                                <div class="approved">
+                                                    Approved & Pick Up
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="tableCurrency">EURO</span>
+                                                <span>440.00</span>
+                                            </td>
+
+                                            <td>
+                                                <div class="invoiceStatus">
+                                                    <span class="me-5">Paid</span>
+                                                    <span class="option p-1 text-center">Option</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>G10G20A10</td>
+                                            <td>02-04-2022</td>
+                                            <td>Germany</td>
+                                            <td>Ghana</td>
+                                            <td>James Ben</td>
+                                            <td>Salome Ben</td>
+                                            <td>
+                                                <div class="pending">
+                                                    Pending
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="tableCurrency">EURO</span>
+                                                <span>440.00</span>
+                                            </td>
+
+                                            <td>
+                                                <div class="invoiceStatus">
+                                                    <span class="me-5">Paid</span>
+                                                    <span class="option p-1 text-center">Option</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>G10G20A10</td>
+                                            <td>02-04-2022</td>
+                                            <td>Germany</td>
+                                            <td>Ghana</td>
+                                            <td>James Ben</td>
+                                            <td>Salome Ben</td>
+                                            <td>
+                                                <div class="delivered">
+                                                    Delivered & Pick Up
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="tableCurrency">EURO</span>
+                                                <span>440.00</span>
+                                            </td>
+
+                                            <td>
+                                                <div class="invoiceStatus">
+                                                    <span class="me-5">Paid</span>
+                                                    <span class="option p-1 text-center">Option</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>G10G20A10</td>
+                                            <td>02-04-2022</td>
+                                            <td>Germany</td>
+                                            <td>Ghana</td>
+                                            <td>James Ben</td>
+                                            <td>Salome Ben</td>
+                                            <td>
+                                                <div class="onRoute">
+                                                    On Route
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="tableCurrency">EURO</span>
+                                                <span>440.00</span>
+                                            </td>
+
+                                            <td>
+                                                <div class="invoiceStatus">
+                                                    <span class="me-3">Pending</span>
+                                                    <span class="option p-1 text-center">Option</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>G10G20A10</td>
+                                            <td>02-04-2022</td>
+                                            <td>Germany</td>
+                                            <td>Ghana</td>
+                                            <td>James Ben</td>
+                                            <td>Salome Ben</td>
+                                            <td>
+                                                <div class="pending">
+                                                    Pending
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="tableCurrency">EURO</span>
+                                                <span>440.00</span>
+                                            </td>
+
+                                            <td>
+                                                <div class="invoiceStatus">
+                                                    <span class="me-3">Pending</span>
+                                                    <span class="option p-1 text-center">Option</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>G10G20A10</td>
+                                            <td>02-04-2022</td>
+                                            <td>Germany</td>
+                                            <td>Ghana</td>
+                                            <td>James Ben</td>
+                                            <td>Salome Ben</td>
+                                            <td>
+                                                <div class="onRoute">
+                                                    On Route
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="tableCurrency">EURO</span>
+                                                <span>440.00</span>
+                                            </td>
+
+                                            <td>
+                                                <div class="invoiceStatus">
+                                                    <span class="me-3">Pending</span>
+                                                    <span class="option p-1 text-center">Option</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+
+                                <div class="pagination">
+                                    <nav aria-label="Page navigation example">
+                                        <ul class="pagination">
+                                            <li class="page-item">
+                                                <a class="page-link" href="#">
+                                                    <span>
+                                                        <i class="fa-solid fa-chevron-left"></i>
+                                                    </span>
+                                                </a>
+                                            </li>
+
+                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item">
+                                                <a class="page-link" href="#">
+                                                    <span><i class="fa-solid fa-chevron-right"></i></span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
                             </div>
 
-                            <table class="table table-borderless text-center">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">Tracking</th>
-                                        <th scope="col">Date</th>
-                                        <th scope="col">Due Date</th>
-                                        <th scope="col">Total Amount</th>
-                                        <th scope="col">Sender</th>
-                                        <th scope="col">Total Paid</th>
-                                        <th scope="col">Status</th>
-                                        <th scope="col">Balance</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>P10G20A10</td>
-                                        <td>02-04-2022</td>
-                                        <td>09-05-2022</td>
-                                        <td>
-                                            <span>USD</span>
-                                            <span>145.89</span>
-                                        </td>
-                                        <td>James Ben</td>
-                                        <td>
-                                            <span>USD</span>
-                                            <span>145.89</span>
-                                        </td>
-                                        <td>
-                                            <div class="pending p-1">
-                                                Pending
-                                            </div>
-                                        </td>
-
-                                        <td>
-                                            <div class="d-flex justify-content-around align-items-center">
-                                                <div>
-                                                    <span> Euro</span>
-                                                    <span>440.23</span>
-                                                </div>
-
-                                                <div class="charges p-1">charges</div>
-                                            </div>
-                                        </td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>P10G20A10</td>
-                                        <td>02-04-2022</td>
-                                        <td>09-05-2022</td>
-                                        <td>
-                                            <span>USD</span>
-                                            <span>145.89</span>
-                                        </td>
-                                        <td>James Ben</td>
-                                        <td>
-                                            <span>USD</span>
-                                            <span>145.89</span>
-                                        </td>
-                                        <td>
-                                            <div class="pending p-1">
-                                                Pending
-                                            </div>
-                                        </td>
-
-                                        <td>
-                                            <div class="d-flex justify-content-around align-items-center">
-                                                <div>
-                                                    <span> Euro</span>
-                                                    <span>440.23</span>
-                                                </div>
-
-                                                <div class="charges p-1">charges</div>
-                                            </div>
-                                        </td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>P10G20A10</td>
-                                        <td>02-04-2022</td>
-                                        <td>09-05-2022</td>
-                                        <td>
-                                            <span>USD</span>
-                                            <span>145.89</span>
-                                        </td>
-                                        <td>James Ben</td>
-                                        <td>
-                                            <span>USD</span>
-                                            <span>145.89</span>
-                                        </td>
-                                        <td>
-                                            <div class="paid p-1">
-                                                Paid
-                                            </div>
-                                        </td>
-
-                                        <td>
-                                            <div class="d-flex justify-content-around align-items-center">
-                                                <div>
-                                                    <span> Euro</span>
-                                                    <span>440.23</span>
-                                                </div>
-
-                                                <div class="charges p-1">charges</div>
-                                            </div>
-                                        </td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>P10G20A10</td>
-                                        <td>02-04-2022</td>
-                                        <td>09-05-2022</td>
-                                        <td>
-                                            <span>USD</span>
-                                            <span>145.89</span>
-                                        </td>
-                                        <td>James Ben</td>
-                                        <td>
-                                            <span>USD</span>
-                                            <span>145.89</span>
-                                        </td>
-                                        <td>
-                                            <div class="paid p-1">
-                                                Paid
-                                            </div>
-                                        </td>
-
-                                        <td>
-                                            <div class="d-flex justify-content-around align-items-center">
-                                                <div>
-                                                    <span> Euro</span>
-                                                    <span>440.23</span>
-                                                </div>
-
-                                                <div class="charges p-1">charges</div>
-                                            </div>
-                                        </td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>P10G20A10</td>
-                                        <td>02-04-2022</td>
-                                        <td>09-05-2022</td>
-                                        <td>
-                                            <span>USD</span>
-                                            <span>145.89</span>
-                                        </td>
-                                        <td>James Ben</td>
-                                        <td>
-                                            <span>USD</span>
-                                            <span>145.89</span>
-                                        </td>
-                                        <td>
-                                            <div class="pending p-1">
-                                                Pending
-                                            </div>
-                                        </td>
-
-                                        <td>
-                                            <div class="d-flex justify-content-around align-items-center">
-                                                <div>
-                                                    <span> Euro</span>
-                                                    <span>440.23</span>
-                                                </div>
-
-                                                <div class="charges p-1">charges</div>
-                                            </div>
-                                        </td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>P10G20A10</td>
-                                        <td>02-04-2022</td>
-                                        <td>09-05-2022</td>
-                                        <td>
-                                            <span>USD</span>
-                                            <span>145.89</span>
-                                        </td>
-                                        <td>James Ben</td>
-                                        <td>
-                                            <span>USD</span>
-                                            <span>145.89</span>
-                                        </td>
-                                        <td>
-                                            <div class="pending p-1">
-                                                Pending
-                                            </div>
-                                        </td>
-
-                                        <td>
-                                            <div class="d-flex justify-content-around align-items-center">
-                                                <div>
-                                                    <span> Euro</span>
-                                                    <span>440.23</span>
-                                                </div>
-
-                                                <div class="charges p-1">charges</div>
-                                            </div>
-                                        </td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>P10G20A10</td>
-                                        <td>02-04-2022</td>
-                                        <td>09-05-2022</td>
-                                        <td>
-                                            <span>USD</span>
-                                            <span>145.89</span>
-                                        </td>
-                                        <td>James Ben</td>
-                                        <td>
-                                            <span>USD</span>
-                                            <span>145.89</span>
-                                        </td>
-                                        <td>
-                                            <div class="paid p-1">
-                                                Paid
-                                            </div>
-                                        </td>
-
-                                        <td>
-                                            <div class="d-flex justify-content-around align-items-center">
-                                                <div>
-                                                    <span> Euro</span>
-                                                    <span>440.23</span>
-                                                </div>
-
-                                                <div class="charges p-1">charges</div>
-                                            </div>
-                                        </td>
-                                    </tr>
-
-
-
-                                </tbody>
-                            </table>
-
-                            <div class="pagination">
-                                <nav aria-label="Page navigation example">
-                                    <ul class="pagination">
-                                        <li class="page-item">
-                                            <a class="page-link" href="#">
-                                                <span>
-                                                    <i class="fa-solid fa-chevron-left"></i>
-                                                </span>
-                                            </a>
-                                        </li>
-
-                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                        <li class="page-item">
-                                            <a class="page-link" href="#">
-                                                <span><i class="fa-solid fa-chevron-right"></i></span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </nav>
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-
         </main>
     </section>
-
 
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script src="./script.js"></script>
@@ -638,7 +609,7 @@
 
         function drawRightY() {
             var data = google.visualization.arrayToDataTable([
-                ['Month', 'Account Receiveable', 'Pending'],
+                ['Month', 'Shipments', 'Delivered'],
                 ['January', 550, 800],
                 ['February', 650, 950],
                 ['March', 450, 600],
@@ -652,7 +623,7 @@
 
             var materialOptions = {
                 chart: {
-                    title: 'Account Receiveable',
+                    title: 'Sales Summary',
                     subtitle: 'Show by Month'
                 },
                 hAxis: {
@@ -675,6 +646,7 @@
             materialChart.draw(data, materialOptions);
         }
     </script>
+
 </body>
 
 </html>

@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TRANSDASH | Dashboard Shipments</title>
-    <link rel="stylesheet" href="./CSS/dashboardShipments.css">
+    <title>TRANSDASH | Payment Lists </title>
+    <link rel="stylesheet" href="./CSS/shoppingPaymentList.css">
     <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/ca2912634d.js" crossorigin="anonymous"></script>
 </head>
@@ -107,6 +107,7 @@
                                 <a href="./createPickUp.html">
                                     <li class="drop-link">Create Pick Up</li>
                                 </a>
+                                
                             </ul>
                         </div>
                     </div>
@@ -297,341 +298,174 @@
 
 
         <main class="main">
-           <div>
-               <div class="container mb-3">
-                   <div class="row">
-                       <div class="col-5">
+            <div class="container">
+                <div class="row mb-3">
+                    <div class="col">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Search by Transaction">
+                            <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
+                          </div>
+                    </div>
 
-                            <div class="overview-container  p-3">
+                    <div class="col">
+                        <select class="form-select">
+                            <option selected>Select gateway</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
 
-                                <h1 class="fs-5 mb-3">Overview of the Latest Month</h1>
-
-                                <div class="overview1 mb-4">
-
-                                    <div class="overviewWrapper">
-                                        <div class="overview-icon me-2 mt-2"><img src="./assets/pickup.png" alt=""></div>
-                                        <div class="overview-content">
-                                            <div class="overview-text">Shipments Pick Up</div>
-                                            <div class="overview-number">70</div>
-                                        </div>
-                                    </div>
-
-                                    <div class="overviewWrapper">
-                                        <div class="overview-icon me-2 mt-2"><img src="./assets/consolidated.png" alt=""></div>
-                                        <div class="overview-content">
-                                            <div class="overview-text">Shipments Consolidated</div>
-                                            <div class="overview-number">70</div>
-                                        </div>
-                                    </div>
-
-
-                                </div>
-
-                                <div class="overview2">
-
-                                    <div class="overviewWrapper">
-                                        <div class="overview-icon me-2 mt-2"><img src="./assets/shipments1.png" alt=""></div>
-                                        <div class="overview-content">
-                                            <div class="overview-text">Shipments</div>
-                                            <div class="overview-number">70</div>
-                                        </div>
-                                    </div>
-
-                                    <div class="overviewWrapper">
-                                        <div class="overview-icon me-4 mt-2"><img src="./assets/account.png" alt=""></div>
-                                        <div class="overview-content">
-                                            <div class="overview-text">Shipments Delivered</div>
-                                            <div class="overview-number">70</div>
-                                        </div>
-                                    </div>
-
-
-                                </div>
-
-                                <div class="totalOverview p-3 mt-5">
-                                    <div class="left-total-overview">
-                                        <div class="month">Current Months</div>
-                                        <div class="income">Income</div>
-                                    </div>
-
-                                    <div class="right-total-overview">
-                                        <div class="totalCurrency">EURO</div>
-                                        <div class="totalAmount">33,000.00</div>
-                                    </div>
-                                </div>
-                            </div>
-                       </div>
-
-                       <div class="col-7">
-                        <div class="chartContainer">
-                             <div id="chart_div" ></div>
-
+                    <div class="col">
+                        <div class="mt-1">
+                            <span>Business Location: </span>
+                            <span class="fw-bold">Ghana, Accra</span>
                         </div>
+                    </div>
 
-                       </div>
-                   </div>
-               </div>
+                </div>
 
-               <div class="container">
+            
+    
+            </div>
+
+            <div class="container mb-5">
                 <div class="row">
                     <div>
-                        <div class="table-responsive mb-3 p-3">
-                            <div class="tableHeader p-2">
-                                <div class="eachHeader">Pick Up Lists</div>
-                                <div class="eachHeader">Shipments Lists</div>
-                                <div class="eachHeader">Consolidated Lists</div>
-                                <div class="eachHeader">Pre Alert Lists</div>
-                                <div class="eachHeader">Package Registered Lists</div>
-                                <div>
-                                    <input type="search" class="form-control" placeholder="Search Tracking">
-                                </div>
-                            </div>
-                            <table class="table table-borderless">
+                        <div class="table-responsive mb-3 p-3 text-center">
+                            <table class="table">
                                 <thead>
                                     <tr>
-                                        <th scope="col">Tracking</th>
+                                        <th scope="col">Payment Method</th>
+                                        <th scope="col">Tracking Number</th>
                                         <th scope="col">Date</th>
-                                        <th scope="col">Origin</th>
-                                        <th scope="col">Destination</th>
-                                        <th scope="col">Sender</th>
-                                        <th scope="col">Receiver</th>
                                         <th scope="col">Status</th>
-                                        <th scope="col">Total Cost</th>
-                                        <th scope="col">Invoice Status</th>
+                                        <th scope="col">Receipt</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
+                                        <td>Credit Card</td>
                                         <td>G10G20A10</td>
                                         <td>02-04-2022</td>
-                                        <td>Germany</td>
-                                        <td>Ghana</td>
-                                        <td>James Ben</td>
-                                        <td>Salome Ben</td>
+                                        <td>Delivered & Pick Up</td>
                                         <td>
-                                            <div class="approved">
-                                                Approved & Pick Up
+                                            <div class="download-btn p-2">
+                                                Download
                                             </div>
                                         </td>
-                                        <td>
-                                            <span class="tableCurrency">EURO</span>
-                                            <span>440.00</span>
-                                        </td>
-
-                                        <td>
-                                            <div class="invoiceStatus">
-                                                <span class="me-5">Paid</span>
-                                                <span class="option p-1 text-center">Option</span>
-                                            </div>
-                                        </td>
+                                       
                                     </tr>
 
                                     <tr>
+                                        <td>Echeck</td>
                                         <td>G10G20A10</td>
                                         <td>02-04-2022</td>
-                                        <td>Germany</td>
-                                        <td>Ghana</td>
-                                        <td>James Ben</td>
-                                        <td>Salome Ben</td>
+                                        <td>Approved</td>
                                         <td>
-                                            <div class="pending">
-                                                Pending
+                                            <div class="download-btn p-2">
+                                                Download
                                             </div>
                                         </td>
-                                        <td>
-                                            <span class="tableCurrency">EURO</span>
-                                            <span>440.00</span>
-                                        </td>
+                                       
+                                    </tr>
 
+                                    
+                                    <tr>
+                                        <td>Echeck</td>
+                                        <td>G10G20A10</td>
+                                        <td>02-04-2022</td>
+                                        <td>Approved</td>
                                         <td>
-                                            <div class="invoiceStatus">
-                                                <span class="me-5">Paid</span>
-                                                <span class="option p-1 text-center">Option</span>
+                                            <div class="download-btn p-2">
+                                                Download
                                             </div>
                                         </td>
+                                       
+                                    </tr>
+
+                                    
+                                    <tr>
+                                        <td>Echeck</td>
+                                        <td>G10G20A10</td>
+                                        <td>02-04-2022</td>
+                                        <td>Approved</td>
+                                        <td>
+                                            <div class="download-btn p-2">
+                                                Download
+                                            </div>
+                                        </td>
+                                       
                                     </tr>
 
                                     <tr>
+                                        <td>Credit Card</td>
                                         <td>G10G20A10</td>
                                         <td>02-04-2022</td>
-                                        <td>Germany</td>
-                                        <td>Ghana</td>
-                                        <td>James Ben</td>
-                                        <td>Salome Ben</td>
+                                        <td>Delivered</td>
                                         <td>
-                                            <div class="delivered">
-                                                Delivered & Pick Up
+                                            <div class="download-btn p-2">
+                                                Download
                                             </div>
                                         </td>
-                                        <td>
-                                            <span class="tableCurrency">EURO</span>
-                                            <span>440.00</span>
-                                        </td>
-
-                                        <td>
-                                            <div class="invoiceStatus">
-                                                <span class="me-5">Paid</span>
-                                                <span class="option p-1 text-center">Option</span>
-                                            </div>
-                                        </td>
+                                       
                                     </tr>
 
                                     <tr>
+                                        <td>Stripe</td>
                                         <td>G10G20A10</td>
                                         <td>02-04-2022</td>
-                                        <td>Germany</td>
-                                        <td>Ghana</td>
-                                        <td>James Ben</td>
-                                        <td>Salome Ben</td>
+                                        <td>Approved</td>
                                         <td>
-                                            <div class="onRoute">
-                                                On Route
+                                            <div class="download-btn p-2">
+                                                Download
                                             </div>
                                         </td>
-                                        <td>
-                                            <span class="tableCurrency">EURO</span>
-                                            <span>440.00</span>
-                                        </td>
-
-                                        <td>
-                                            <div class="invoiceStatus">
-                                                <span class="me-3">Pending</span>
-                                                <span class="option p-1 text-center">Option</span>
-                                            </div>
-                                        </td>
+                                       
                                     </tr>
 
                                     <tr>
+                                        <td>PayPal</td>
                                         <td>G10G20A10</td>
                                         <td>02-04-2022</td>
-                                        <td>Germany</td>
-                                        <td>Ghana</td>
-                                        <td>James Ben</td>
-                                        <td>Salome Ben</td>
+                                        <td>Approved</td>
                                         <td>
-                                            <div class="pending">
-                                                Pending
+                                            <div class="download-btn p-2">
+                                                Download
                                             </div>
                                         </td>
-                                        <td>
-                                            <span class="tableCurrency">EURO</span>
-                                            <span>440.00</span>
-                                        </td>
-
-                                        <td>
-                                            <div class="invoiceStatus">
-                                                <span class="me-3">Pending</span>
-                                                <span class="option p-1 text-center">Option</span>
-                                            </div>
-                                        </td>
+                                       
                                     </tr>
 
                                     <tr>
+                                        <td>PayStack</td>
                                         <td>G10G20A10</td>
                                         <td>02-04-2022</td>
-                                        <td>Germany</td>
-                                        <td>Ghana</td>
-                                        <td>James Ben</td>
-                                        <td>Salome Ben</td>
+                                        <td>Delivered & Pick Up</td>
                                         <td>
-                                            <div class="onRoute">
-                                                On Route
+                                            <div class="download-btn p-2">
+                                                Download
                                             </div>
                                         </td>
-                                        <td>
-                                            <span class="tableCurrency">EURO</span>
-                                            <span>440.00</span>
-                                        </td>
-
-                                        <td>
-                                            <div class="invoiceStatus">
-                                                <span class="me-3">Pending</span>
-                                                <span class="option p-1 text-center">Option</span>
-                                            </div>
-                                        </td>
+                                       
                                     </tr>
 
                                 </tbody>
                             </table>
-
-                            <div class="pagination">
-                                <nav aria-label="Page navigation example">
-                                    <ul class="pagination">
-                                        <li class="page-item">
-                                            <a class="page-link" href="#">
-                                                <span>
-                                                    <i class="fa-solid fa-chevron-left"></i>
-                                                </span>
-                                            </a>
-                                        </li>
-
-                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                        <li class="page-item">
-                                            <a class="page-link" href="#">
-                                                <span><i class="fa-solid fa-chevron-right"></i></span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </nav>
-                            </div>
                         </div>
+
+                       
+
                     </div>
                 </div>
-               </div>
+            </div>
 
-           </div>
         </main>
+
     </section>
 
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
     <script src="./script.js"></script>
-    <script>
-        
-        google.charts.load('current', {packages: ['corechart', 'bar']});
-        google.charts.setOnLoadCallback(drawRightY);
-
-        function drawRightY() {
-        var data = google.visualization.arrayToDataTable([
-            ['Month', 'Shipments', 'Delivered' ],
-            ['January', 550, 800],
-            ['February', 650, 950],
-            ['March', 450, 600],
-            ['April', 600, 850],
-            ['June', 680, 980],
-            ['July', 820, 1000],
-            ['August', 400, 700],
-            ['September', 580, 820]
-           
-        ]);
-
-        var materialOptions = {
-            chart: {
-            title: 'Sales Summary',
-            subtitle: 'Show by Month'
-            },
-            hAxis: {
-            title: '',
-            minValue: 0,
-            },
-            vAxis: {
-            title: 'Sales Summary'
-            },
-            bars: 'vertical',
-            axes: {
-            y: {
-                0: {side: 'left'}
-            }
-            }
-        };
-        var materialChart = new google.charts.Bar(document.getElementById('chart_div'));
-        materialChart.draw(data, materialOptions);
-        }
-
-
-        
-    </script>
 </body>
 
 </html>

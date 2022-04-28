@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TRANSDASH | Dashboard Shipments</title>
-    <link rel="stylesheet" href="./CSS/dashboardShipments.css">
+    <title>TRANSDASH | Dashboard Consolidated</title>
+    <link rel="stylesheet" href="./CSS/dashboardConsolidated.css">
     <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/ca2912634d.js" crossorigin="anonymous"></script>
 </head>
@@ -33,7 +33,7 @@
 
             <div class="notification me-3">
                 <span><i class="fa-solid fa-bell"></i></span>
-                <span class="notification-dot"></span>
+                <span class="notification-dot text-center">100</span>
             </div>
 
             <div class="profileImg me-3">
@@ -295,98 +295,76 @@
             </div>
         </div>
 
-
         <main class="main">
-           <div>
-               <div class="container mb-3">
-                   <div class="row">
-                       <div class="col-5">
+            <div class="container-fluid mb-5">
+                <div class="row">
+                    <div class="col-5">
+                      <div class="consolidatedContainer">
+                          <h1 class="fs-5 mb-3">Overview Of The Latest Month</h1>
 
-                            <div class="overview-container  p-3">
-
-                                <h1 class="fs-5 mb-3">Overview of the Latest Month</h1>
-
-                                <div class="overview1 mb-4">
-
-                                    <div class="overviewWrapper">
-                                        <div class="overview-icon me-2 mt-2"><img src="./assets/pickup.png" alt=""></div>
-                                        <div class="overview-content">
-                                            <div class="overview-text">Shipments Pick Up</div>
-                                            <div class="overview-number">70</div>
-                                        </div>
+                          <div class="d-flex justify-content-around">
+                                <div class="d-flex">
+                                    <div class="consolidated-icon me-3 mt-2">
+                                        <img src="./assets/account.png" alt="">
                                     </div>
 
-                                    <div class="overviewWrapper">
-                                        <div class="overview-icon me-2 mt-2"><img src="./assets/consolidated.png" alt=""></div>
-                                        <div class="overview-content">
-                                            <div class="overview-text">Shipments Consolidated</div>
-                                            <div class="overview-number">70</div>
-                                        </div>
-                                    </div>
-
-
-                                </div>
-
-                                <div class="overview2">
-
-                                    <div class="overviewWrapper">
-                                        <div class="overview-icon me-2 mt-2"><img src="./assets/shipments1.png" alt=""></div>
-                                        <div class="overview-content">
-                                            <div class="overview-text">Shipments</div>
-                                            <div class="overview-number">70</div>
-                                        </div>
-                                    </div>
-
-                                    <div class="overviewWrapper">
-                                        <div class="overview-icon me-4 mt-2"><img src="./assets/account.png" alt=""></div>
-                                        <div class="overview-content">
-                                            <div class="overview-text">Shipments Delivered</div>
-                                            <div class="overview-number">70</div>
-                                        </div>
-                                    </div>
-
-
-                                </div>
-
-                                <div class="totalOverview p-3 mt-5">
-                                    <div class="left-total-overview">
-                                        <div class="month">Current Months</div>
-                                        <div class="income">Income</div>
-                                    </div>
-
-                                    <div class="right-total-overview">
-                                        <div class="totalCurrency">EURO</div>
-                                        <div class="totalAmount">33,000.00</div>
+                                    <div>
+                                        <div>Consolidated Delivered</div>
+                                        <div>29</div>
                                     </div>
                                 </div>
-                            </div>
-                       </div>
 
-                       <div class="col-7">
+                                <div class="d-flex">
+                                    <div class="consolidated-icon me-3 mt-2">
+                                        <img src="./assets/consolidated.png" alt="">
+                                    </div>
+
+                                    <div>
+                                        <div>Consolidated</div>
+                                        <div>5</div>
+                                    </div>
+                                </div>
+                          </div>
+
+
+                          <div class="containerBottom d-flex justify-content-between p-3">
+                                <div>
+                                    <div>Current Month</div>
+                                    <div>Income</div>
+                                </div>
+
+                                <div>
+                                    <div>EURO</div>
+                                    <div>1500.00</div>
+                                </div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="col-7">
                         <div class="chartContainer">
-                             <div id="chart_div" ></div>
-
+                            <div id="chart_div"></div>
                         </div>
+                    </div>
+                </div>
+            </div>
 
-                       </div>
-                   </div>
-               </div>
-
-               <div class="container">
+            <div class="container-fluid">
                 <div class="row">
                     <div>
                         <div class="table-responsive mb-3 p-3">
-                            <div class="tableHeader p-2">
-                                <div class="eachHeader">Pick Up Lists</div>
-                                <div class="eachHeader">Shipments Lists</div>
-                                <div class="eachHeader">Consolidated Lists</div>
-                                <div class="eachHeader">Pre Alert Lists</div>
-                                <div class="eachHeader">Package Registered Lists</div>
-                                <div>
-                                    <input type="search" class="form-control" placeholder="Search Tracking">
+                            <div class="d-flex justify-content-between align-items-center p-2">
+
+                                <div class="d-flex align-items-center">
+                                    <div class="me-5 fw-bold">Consolidated List</div>
+                                    <div>
+                                        <input type="search" class="form-control" placeholder="Search Tracking">
+                                    </div>
                                 </div>
+
+                                <div class="fw-bold"><Span>Overview Of The Latest Month</Span></div>
                             </div>
-                            <table class="table table-borderless">
+
+                            <table class="table table-borderless text-center">
                                 <thead>
                                     <tr>
                                         <th scope="col">Tracking</th>
@@ -397,7 +375,6 @@
                                         <th scope="col">Receiver</th>
                                         <th scope="col">Status</th>
                                         <th scope="col">Total Cost</th>
-                                        <th scope="col">Invoice Status</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -417,13 +394,6 @@
                                             <span class="tableCurrency">EURO</span>
                                             <span>440.00</span>
                                         </td>
-
-                                        <td>
-                                            <div class="invoiceStatus">
-                                                <span class="me-5">Paid</span>
-                                                <span class="option p-1 text-center">Option</span>
-                                            </div>
-                                        </td>
                                     </tr>
 
                                     <tr>
@@ -441,13 +411,6 @@
                                         <td>
                                             <span class="tableCurrency">EURO</span>
                                             <span>440.00</span>
-                                        </td>
-
-                                        <td>
-                                            <div class="invoiceStatus">
-                                                <span class="me-5">Paid</span>
-                                                <span class="option p-1 text-center">Option</span>
-                                            </div>
                                         </td>
                                     </tr>
 
@@ -467,13 +430,6 @@
                                             <span class="tableCurrency">EURO</span>
                                             <span>440.00</span>
                                         </td>
-
-                                        <td>
-                                            <div class="invoiceStatus">
-                                                <span class="me-5">Paid</span>
-                                                <span class="option p-1 text-center">Option</span>
-                                            </div>
-                                        </td>
                                     </tr>
 
                                     <tr>
@@ -484,20 +440,13 @@
                                         <td>James Ben</td>
                                         <td>Salome Ben</td>
                                         <td>
-                                            <div class="onRoute">
-                                                On Route
+                                            <div class="pending">
+                                                Pending
                                             </div>
                                         </td>
                                         <td>
                                             <span class="tableCurrency">EURO</span>
                                             <span>440.00</span>
-                                        </td>
-
-                                        <td>
-                                            <div class="invoiceStatus">
-                                                <span class="me-3">Pending</span>
-                                                <span class="option p-1 text-center">Option</span>
-                                            </div>
                                         </td>
                                     </tr>
 
@@ -517,12 +466,23 @@
                                             <span class="tableCurrency">EURO</span>
                                             <span>440.00</span>
                                         </td>
+                                    </tr>
 
+                                    <tr>
+                                        <td>G10G20A10</td>
+                                        <td>02-04-2022</td>
+                                        <td>Germany</td>
+                                        <td>Ghana</td>
+                                        <td>James Ben</td>
+                                        <td>Salome Ben</td>
                                         <td>
-                                            <div class="invoiceStatus">
-                                                <span class="me-3">Pending</span>
-                                                <span class="option p-1 text-center">Option</span>
+                                            <div class="delivered">
+                                                Delivered & Pick Up
                                             </div>
+                                        </td>
+                                        <td>
+                                            <span class="tableCurrency">EURO</span>
+                                            <span>440.00</span>
                                         </td>
                                     </tr>
 
@@ -534,20 +494,31 @@
                                         <td>James Ben</td>
                                         <td>Salome Ben</td>
                                         <td>
-                                            <div class="onRoute">
-                                                On Route
+                                            <div class="pending">
+                                                Pending
                                             </div>
                                         </td>
                                         <td>
                                             <span class="tableCurrency">EURO</span>
                                             <span>440.00</span>
                                         </td>
+                                    </tr>
 
+                                    <tr>
+                                        <td>G10G20A10</td>
+                                        <td>02-04-2022</td>
+                                        <td>Germany</td>
+                                        <td>Ghana</td>
+                                        <td>James Ben</td>
+                                        <td>Salome Ben</td>
                                         <td>
-                                            <div class="invoiceStatus">
-                                                <span class="me-3">Pending</span>
-                                                <span class="option p-1 text-center">Option</span>
+                                            <div class="delivered">
+                                                Delivered & Pick Up
                                             </div>
+                                        </td>
+                                        <td>
+                                            <span class="tableCurrency">EURO</span>
+                                            <span>440.00</span>
                                         </td>
                                     </tr>
 
@@ -577,60 +548,62 @@
                                 </nav>
                             </div>
                         </div>
+
                     </div>
                 </div>
-               </div>
+            </div>
 
-           </div>
+
         </main>
     </section>
+
 
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script src="./script.js"></script>
     <script>
-        
-        google.charts.load('current', {packages: ['corechart', 'bar']});
+        google.charts.load('current', {
+            packages: ['corechart', 'bar']
+        });
         google.charts.setOnLoadCallback(drawRightY);
 
         function drawRightY() {
-        var data = google.visualization.arrayToDataTable([
-            ['Month', 'Shipments', 'Delivered' ],
-            ['January', 550, 800],
-            ['February', 650, 950],
-            ['March', 450, 600],
-            ['April', 600, 850],
-            ['June', 680, 980],
-            ['July', 820, 1000],
-            ['August', 400, 700],
-            ['September', 580, 820]
-           
-        ]);
+            var data = google.visualization.arrayToDataTable([
+                ['Month', 'Account Receiveable', 'Pending'],
+                ['January', 550, 800],
+                ['February', 650, 950],
+                ['March', 450, 600],
+                ['April', 600, 850],
+                ['June', 680, 980],
+                ['July', 820, 1000],
+                ['August', 400, 700],
+                ['September', 580, 820]
 
-        var materialOptions = {
-            chart: {
-            title: 'Sales Summary',
-            subtitle: 'Show by Month'
-            },
-            hAxis: {
-            title: '',
-            minValue: 0,
-            },
-            vAxis: {
-            title: 'Sales Summary'
-            },
-            bars: 'vertical',
-            axes: {
-            y: {
-                0: {side: 'left'}
-            }
-            }
-        };
-        var materialChart = new google.charts.Bar(document.getElementById('chart_div'));
-        materialChart.draw(data, materialOptions);
+            ]);
+
+            var materialOptions = {
+                chart: {
+                    title: 'Account Receiveable',
+                    subtitle: 'Show by Month'
+                },
+                hAxis: {
+                    title: '',
+                    minValue: 0,
+                },
+                vAxis: {
+                    title: 'Sales Summary'
+                },
+                bars: 'vertical',
+                axes: {
+                    y: {
+                        0: {
+                            side: 'left'
+                        }
+                    }
+                }
+            };
+            var materialChart = new google.charts.Bar(document.getElementById('chart_div'));
+            materialChart.draw(data, materialOptions);
         }
-
-
-        
     </script>
 </body>
 
